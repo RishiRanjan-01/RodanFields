@@ -1,0 +1,474 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+}
+* {
+    font-family: ProximaNovaRegular, Arial, Sans-Serif;
+}
+#top-header {
+    height: 30px;
+    background-color: #F7F4F2;
+    width: 100%;
+    padding: 15px 0px 15px 0px;
+}
+#top-header>p {
+    margin: auto;
+    color: rgb(90, 87, 87);
+    font-size: 0.8rem;
+    line-height: 2;
+    text-align: center;
+    font-weight: 500;
+}
+#top-header>p>a {
+    font-size: 15px;
+    margin-left: 5px;
+    color: rgb(66, 62, 62);
+    font-weight: 600;
+}
+
+  /* Navbar second box CSS  */
+
+#navbar01 {
+    height: 30px;
+    width: 100%;
+    padding: 20px 10px 20px 10px;
+    border-bottom: 1px solid #222;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+#navbar-icon {
+    display: flex;
+    width: 270px;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 13px;
+    padding: 0px 50px;
+    color: #313234;
+    /* border: 1px solid red; */
+    /* font-weight: 600; */
+}
+#navbar-icon>p{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    /* border: 1px solid red; */
+}
+#navbar>img {
+    height: 60px;
+    width: 180px;
+}
+#lang {
+    width: 30%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5px;
+    color: rgb(95, 88, 88)
+}
+#lang>img {
+    height: 15px;
+    width: 30px;
+}
+#rodanimg {
+    margin-left: 170px;
+}
+#find-consultant>a {
+    text-decoration: none;
+    color: #313234;
+    font-size: 13px;
+    font-weight: 600;
+}
+#search-icon{
+    font-size: 17px; 
+}
+#user-icon{
+    font-size: 17px;
+}
+#cart{
+    height: 30px;
+    width: 45px;
+    /* border: 1px solid blue; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -5px;
+}
+#bag-icon{
+    font-size: 22px;
+}
+#bag-icon+p{
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background-color: black;
+    color: aliceblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 10px;
+    margin-top: 25px;
+    margin-left: -8px;
+    visibility: hidden;
+    
+}
+
+  /* Navbar Second Box CSS Ends Here */
+
+#categories{
+    display: flex;
+    gap: 20px;
+    font-size: 12px;
+    box-shadow: 0 2px 4px 0 rgb(0 0 0 / 25%);
+    padding: 25px 0px 25px 0px;
+    justify-content: center;
+    margin-top: 0px;
+    font-weight: 600;
+    color:rgb(87, 87, 87);
+    
+}
+li{
+    list-style-type: none;
+    cursor: pointer;
+}
+li a{
+    text-decoration: none;
+    color: rgb(106, 104, 104);
+}
+.submenu{
+    position: absolute;
+    line-height: 2;
+    box-shadow: 0 2px 4px 0 rgb(0 0 0 / 25%);
+    height: max-content;
+    width: 100%;
+    visibility: hidden;
+    opacity: 0;
+    top: 23%;
+    left: 0;
+    opacity: 0;
+    padding: 40px 150px 55px 0px;
+    display: flex;
+    gap: 150px;
+    justify-content:center;
+    gap: 200px;
+    z-index: 1;
+    background-color: white;
+    backdrop-filter: blur(100px);
+
+
+    /* margin-left: 50px; */
+    /* pointer-events: none;
+    transform: translateY(-40px);
+    border: 1px solid red; */
+}
+.categories-items:hover .submenu{
+    visibility: visible;
+    opacity: 1;
+    /* pointer-events: auto;
+    transform: translateY(0px); */
+}
+li:after {
+    display:block;
+    content: '';
+    border-bottom: solid 3px #019fb6;  
+    transform: scaleX(0);  
+    transition: transform 250ms ease-in-out;
+  }
+  li:hover:after { transform: scaleX(1); }
+  /* li.fromRight:after{ transform-origin:100% 50%; } */
+  li.fromLeft:after{  transform-origin:  0% 50%; }
+
+  
+    /* Search box CSS start from here */
+
+    #search {
+        cursor: pointer;
+    }
+    
+    /* #searchDiv {
+        height: 780px;
+        width: 100%;
+        background-color: white;
+        margin-top: -200px;
+        display: block;
+        backdrop-filter: blur(20px);
+        margin-top: 0px;
+    }
+     */
+
+    #searchDiv>div {
+        width: 100%;
+        height: 50%;
+        background-color: white;
+        backdrop-filter: blur(10px);
+        margin-top: -250px;
+        /* border: 1px solid red; */
+    }
+    
+    #inputField {
+        width: 85%;
+        height: 85%;
+        margin: auto;
+        margin-top: 50px;
+        /* display: flex; */
+    }
+    
+    #inputField>input {
+        width: 99%;
+        height: 50px;
+        font-size: 25px;
+        border: none;
+        border-bottom: 1px solid rgb(95, 91, 91);
+        outline: none;
+        /* margin-top: 20px; */
+        font-weight: 100;
+        color: #756f6f;
+    }
+    
+    #Cross-button {
+        height: 50px;
+        width: 50px;
+        margin-left: -50px;
+        border: none;
+        background-color: white;
+        color: grey;
+        margin-top: 15px;
+        cursor: pointer;
+        font-size: 40px;
+    }
+    
+    .fa-xmark {
+        font-size: 40px;
+    
+    }
+    
+    #text-content {
+        height: 80%;
+        width: 100%;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        gap: 10px;
+    }
+    
+    #text-content>div {
+        margin-top: 20px;
+    }
+    
+    #text-content>div>p {
+        margin-top: -5px;
+        color: rgb(91, 85, 85);
+    }
+    
+    #text-content>div>h3 {
+        color: rgb(91, 85, 85);
+    }
+    
+    #text-content>#box3 {
+        display: flex;
+        padding: 20px;
+    
+    }
+    
+    #text-content>#box3>p {
+        width: 170px;
+        align-self: baseline;
+        display: inline;
+        font-size: 17px;
+        margin-left: 5px;
+    }
+    
+    #text-content>#box3>p>a {
+        color: rgb(91, 85, 85);
+    }
+    
+    #text-content>#box3>img {
+        height: 150px;
+        width: 200px;
+    }
+
+
+    /* Login Profile Box Css Start Here */
+#login-box{
+    /* height: 250px; */
+    width: 300px;
+    display: block;
+    position: relative;
+    float: right;
+    margin-right: 200px;
+    background-color: white;
+    padding: 10px 10px 10px 10px;
+    border-bottom: 1px solid grey;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;  
+    margin-top: -75px;
+}
+#password-box{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: -10px;
+}
+#login-box > input{
+    width: 93%;
+    height: 15px;
+    padding: 10px;
+    
+}
+#login-box > input:focus{
+    outline: none;
+    background-color: white;
+}
+#signin{
+    width: 99%;
+    height: 45px;
+    margin: auto;
+    font-size: 17px;
+    font-weight: 600;
+    color: aliceblue;
+    background-color: black;
+    border: none;
+    border-radius: 5px; 
+}
+#signin:hover{
+    background-color: #544d46;
+}
+#login-box span{
+    margin-top: 20px;
+    font-size: 14px;
+    color: grey;
+}
+#login-box p{
+    font-size: 13px;
+    color: grey;
+}
+#login-box a{
+    text-decoration: none;
+}
+#signup+P{
+    font-size: 14px;
+    margin-top: 20px;
+}
+#signup{
+    text-decoration: none;
+    width: max-content;
+    background-color: #544d46;
+    padding: 8px;
+    margin: auto;
+    margin-top: 15px;
+    
+}
+#signup a{
+    color:aliceblue;
+    font-weight: 600;
+}
+
+/* Login box ends here  */
+
+/* Language box start here */
+#language{
+    height: 780px;
+    width: 100%;
+    background-color: white;
+    margin-top: -150px;
+    display: block;
+    display: flex;
+}
+#language > div{
+    width: 400px;
+    margin: auto;
+    background-color: white;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    backdrop-filter: blur(10px);
+    margin-top: 150px;
+}
+#language > div > p{
+    width: 100%;
+    height: 30px;
+    text-align: center;
+    border-bottom: 1px solid grey;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 0px 0px 15px;
+}
+#lang-cross{
+    font-size: 30px;
+    margin-right: 20px;
+}
+#lang-option{
+    height: 80%;
+    width: 100%;
+    padding: 10px 20px 10px 20px;
+    font-size: 15px;
+    color: #544d46;
+}
+#lang-categories div{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    
+}
+#lang-categories div > img{
+    height: 20px;
+    width: 40px;
+}
+#lang-categories div >p > a{
+    text-decoration: none;
+    color: #544d46;
+
+}
+#lang-categories div >p > a:hover{
+    border-bottom: 1px solid #544d46;
+}
+
+   /* cartBox CSS Start from here */
+   #cart-box{
+    height: 740px;
+    width: 100%;
+    /* border: 1px solid blue; */
+    margin-top: -205px;
+    background-color: #FFFFFF;
+
+}
+#cart-box > div{
+    height: 100%;
+    width: 23%;
+    background-color: white;
+    backdrop-filter: blur(20px);
+    float: right;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+#cart-top{
+    display: flex;
+    width: 100%;
+    height: 50px;
+    border-bottom: 1px solid grey;
+    justify-content: space-between;
+    align-items: center;
+}
+#cart-icon{
+    font-size: 25px;
+}
+#cross-icon{
+    font-size: 25px;
+}
+#cart-top > div{
+    display: flex;
+    align-items: center;
+}
+#cart-top > div > p{
+    height: 15px;
+    width: 15px;
+    border: 1px solid black;
+    border-radius: 50%;
+    line-height: 1;
+    margin-left: -10px;
+    margin-top: 30px;
+    font-size: 12px;
+    background-color: black;
+    color: aliceblue;
+    display: flex;
+    justify-content:center;
+    align-items: center;   
+}

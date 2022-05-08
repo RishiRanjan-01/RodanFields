@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/navbar.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./styles/footer.css">
+    <script
+      src="https://kit.fontawesome.com/24c494a6b6.js"
+      crossorigin="anonymous">
+    </script>
+    <style>
+        body{
+            margin: 0px;
+            padding: 0px;
+            overflow-y: scroll;
+        }
+        #products{
+            width: 90%;
+            margin: auto;
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            grid-template-rows: auto;
+            gap: 20px;
+
+        }
+        #products > div{
+            padding: 10px;
+            box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+        }
+        #products > div img{
+            width: 100%;
+            height: 250px;
+        }
+        #products > div button{
+            width: 100%;
+            height: 40px;
+            font-size: 17px;
+            line-height: 1.5;
+            outline: 1px solid black;
+            border: none;
+            border-radius: 4px;
+        }
+        #products > div button:hover{
+            outline: none;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div id="navbar"></div>
+    <div id="products"></div>
+    <div id="footer"></div>
+</body>
+</html>
+
+
+<script type="module">
+    import { headers } from "../components/navbar.js";
+
+    document.getElementById("navbar").innerHTML = headers();
+
+    import { footer } from "../components/footer.js"
+
+    document.getElementById("footer").innerHTML = footer();
+
+    import { getData, append } from "./scripts/fetch.js"
+
+    let url = `https://makeup-api.herokuapp.com/api/v1/products.json?brand=maybelline`
+
+   let productBox = document.getElementById("products")
+
+   let product = await getData(url);
+   console.log(product)
+   append(product,productBox);
+
+   let SearchRes = async()=>{
+    let search = localStorage.getItem("search_val");
+    productBox.innerHTML=null;
+
+    let url = `http://makeup-api.herokuapp.com/api/v1/products.json?brand=covergirl&product_type=${search}`
+    
+    let data = await getData(url)
+    console.log(data)
+    if(data.length == 0){
+        let div = document.createElement("div"); 
+
+       let img = document.createElement("img");
+       img.src = "https://media2.giphy.com/media/OKvgO8uBDWi3Uu6ht3/200w.webp?cid=ecf05e47fg7zxb8bxgmpi9q45h9jmm1simg9kkrj9kurwo2y&rid=200w.webp&ct=g";
+       div.append(img);
+       productBox.append(div)
+    }
+    append(data,productBox)
+   }
+   SearchRes();
+
+   let SearchFun = async(e)=>{
+    if(e.key == "Enter"){
+        productBox.innerHTML=null;
+        let query_search = document.getElementById("query").value
+        // console.log(query_search)
+        let url1 = `http://makeup-api.herokuapp.com/api/v1/products.json?&brand=${query_search}`
+        let result = await getData(url);
+        append(result,productBox)
+    }
+    
+}
+
+   document.getElementById("query").addEventListener("keydown",SearchFun)
+</script>
+<script src="./scripts/header.js" type="module"></script>

@@ -1,0 +1,575 @@
+*{
+    @font-face {
+        font-family: 'Source Serif Pro', serif;;
+        src: url("https://fonts.googleapis.com");
+        font-weight:400;
+        font-style:normal;
+    }
+}
+
+
+body{
+    overflow-y: scroll;
+    height: 100%;
+    width: 100%;
+    
+}
+#main-body{
+    padding-left: 40px;
+    padding-right: 80px;
+
+}
+
+/* ------------First Image box ------------------------- */
+
+
+
+#firstImgbox{
+    height: 600px;
+    width: 100%;
+    padding: 0px 20px 0px 20px;
+    /* border: 1px solid red; */
+    background-image: url("https://www.rodanandfields.com/en-us/medias/22-Mini-HP-Banners-Desktop.jpg?context=bWFzdGVyfHJvb3R8MTc3NTUzfGltYWdlL2pwZWd8aGQxL2g3OC8xNTAzOTI4NDQ0NTIxNC5qcGd8YWNjYzUyZWI0Yzk3Zjc2YTIyZjRmODY0ZTQzMmExYTY3ZWNiNDAzNGEzZTcyMmNkMzE5NDZkYjkwNWFjNmM0Mw");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    margin-top: -8px;
+}
+#firstImgbox > div{
+    height: 500px;
+    width: 350px;
+    /* border: 1px solid red; */
+    padding: 65px 30px 30px 45px;
+}
+#firstImgbox > div > p{
+    width: 290px;
+    height: 150px;
+    font-size: 30px;
+    font-weight: normal;
+    font-family: 'Merriweather', serif;
+    line-height: 1.8;
+    letter-spacing: 2px;
+    color: rgb(45, 45, 45);
+    /* border: 1px solid red; */
+
+}
+#firstImgbox > div > p:nth-child(2){
+    font-size: 20px;
+    line-height: none;
+    height: 120px;
+    width: 330px;
+    letter-spacing: 0px;
+}
+#firstImgbox > div > p:nth-child(3){
+    font-size: 10px;
+    line-height: none;
+    height: 50px;
+    width: 310px;
+}
+#shop-now-btn{
+    height: 40px;
+    width: 280px;
+    font-size: 15px;
+    background-color: aliceblue;
+    border: none;
+    border-radius: 3px;
+    padding: 5px;
+    outline: 1px solid black;
+    color: black;
+    letter-spacing: 2px;
+    line-height: 2;
+}
+#shop-now-btn:hover{
+    outline: none;
+}
+#firstImgbox > div > p > a{
+    color: rgb(45, 45, 45);
+}
+#firstImgbox+p{
+    width: 103%;
+    height: 20px;
+    /* padding: 20px; */
+    /* border: 1px solid red; */
+}
+#firstImgbox+p>a{
+    float: right;
+    color: rgb(61, 57, 57);
+    font-weight: none;
+}
+#card-box{
+    height: 550px;
+    width: 103%;
+    background-image: url("https://www.rodanandfields.com/en-us/medias/Best-Sellers-Image-Desktop.jpg?context=bWFzdGVyfHJvb3R8NjA5MTd8aW1hZ2UvanBlZ3xoOTcvaGNkLzEyODg5MTg3ODExMzU4LmpwZ3w2ZGZjZGYxNzg4ZDY2ODI2NzQyZTMyNGI2YmExYmRkNGNjYTBkNGI4MzE5OTIwM2M4M2Q1MGZlMmY1YmFjMDJk");
+    background-repeat: no-repeat;
+    background-size:cover;
+    padding: 20px 0px 20px 0px;
+    display: grid;
+    grid-template-columns: repeat(8,1fr);
+    gap: 15px;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    scroll-behavior: smooth;
+    scrollbar-width: thin;
+    /* flex-grow: 1; */
+}
+#card-box::-webkit-scrollbar-track {
+    -box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    background-color: #F5F5F5;
+  }
+#card-box::-webkit-scrollbar {
+    width: 2px;
+    height: 7px;
+    cursor: pointer;
+    background-color: #F5F5F5;
+}
+#card-box::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+    background-color: #666666;
+}
+#card{
+    height: 80%;
+    width: 300px;
+    /* border: 1px solid red; */
+    padding: 20px 20px 0px 30px
+}
+#card  p:nth-child(1){
+    font-size: 40px;
+    /* border: 1px solid blue; */
+    font-family: 'Source Serif Pro', serif;
+    line-height: 1.5;
+    font-stretch: expanded;
+    letter-spacing: 2px;
+    font-style: normal;
+    flex-direction: column;   
+}
+#card a{
+    color: #222;
+    text-align: center;
+}
+.card1{
+    /* border: 1px solid red; */
+    padding: 10px 15px 15px 15px;
+    width: 300px;
+    /* height: 500px; */
+    background-color: white;
+    cursor: pointer;
+}
+.card1 > img{
+    /* margin-top: -30px; */
+    height: 250px;
+    width: 100%;
+}
+.card1 > P{
+    font-size: 14px;
+}
+.card1 > p:nth-child(1){
+   border: 1px solid grey;
+}
+.card1 >span{
+    border: 1px solid grey;
+    float: right;
+    height: 8px;
+    width: 80px;
+    color: grey;
+    opacity: 0.5;
+    font-size: 10px;
+    text-align: center;
+    padding: 5px;
+}
+.card1 > p:nth-child(3){
+    font-size: 15px;
+    font-weight: 400;
+}
+.card1 > p:nth-child(4){
+    color: rgb(84, 84, 84);
+    
+}
+.card1 > p:nth-child(5){
+    font-size: 15px;
+    
+}
+
+.rating{
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.rating > p{
+    font-size: 10px;
+
+}
+.card1 button{
+    height: 40px;
+    width: 100%;
+    letter-spacing: 2px;
+    margin-top: 20px;
+    border: none;
+    outline: 1px solid black;
+    border-radius: 3px;
+    background-color: white;
+}
+#retail{
+    font-size: 12px;
+    margin-top: -15px;
+}
+
+
+/* ---------------------------Second Image box -------------- */
+
+#SecondImgbox{
+    height: 500px;
+    width: 100%;
+    margin-top: 30px;
+    background-color: #f8f4f2;
+    padding: 80px 20px 80px 20px;
+    /* border: 1px solid red; */
+}
+#SecondImgbox > p{
+    font-size: 40px;
+    font-family: 'Source Serif Pro', serif;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    text-align: center;
+    color: #363535;
+
+}
+#SecondImgbox > p > i{
+    text-decoration: none;
+    font-weight: 100;
+}
+#imgbox{
+    width: 100%;
+    height: 290px;
+    /* border: 1px solid red; */
+    display: flex;
+    gap: 20px;
+    padding: 10px;
+}
+#imgbox > div{
+    height: 99%;
+    width: 15.5%;
+    /* border: 1px solid blue; */
+    background-color: white;
+    border-radius: 10px;
+}
+#imgbox > div > img{
+    height: 219px;
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+#imgbox > div >p{
+    text-align: center;
+    font-weight: 600;
+    color: #666666;
+}
+#imgbox+div{
+    /* border: 1px solid red; */
+    height: 120px;
+    margin-top: 20px;
+    display: flex;
+}
+#shop-all-btn{
+    margin: auto;
+    margin-top: 50px;
+    height: 50px;
+    width: 350px;
+    font-size: 17px;
+    letter-spacing: 1.5px;
+    align-self: center;
+    border-radius: 5px;
+    border: none;
+    outline: 1px solid black;
+    font-weight: 600;
+}
+#shop-all-btn >a{
+    text-decoration: none;
+    color: #222;
+}
+#shop-all-btn >a:hover{
+    border-bottom: 1px solid #222;
+}
+#imgbox > div:nth-child(1) > img:hover{
+    content: url("https://www.rodanandfields.com/en-us/medias/Category-Image-1.png?context=bWFzdGVyfHJvb3R8MzcxNDI1fGltYWdlL3BuZ3xoOGIvaDJiLzEzOTAwNTk3MTMzMzQyLnBuZ3w5NTMwMDY2NDkxOTRmNDI1Mjc5ZjIyOTYxYjUyZTFiNDkyNDZhODZmNTJlZmQ4ZjU4NzBmZjI2NzFiMzhmZTMy");
+}
+#imgbox > div:nth-child(2) > img:hover{
+    content: url("https://www.rodanandfields.com/en-us/medias/Category-Image-2.png?context=bWFzdGVyfHJvb3R8Mzg1Mjk1fGltYWdlL3BuZ3xoOGUvaGI2LzEzOTAwNTk3MTk4ODc4LnBuZ3xmYzY3MThiYTcyZTNiMjhjNTI4MGZjNTUxMTY5OTgwNjFhMWQzM2Y0ZWQyZjJjMTUwOGEwYjBmM2Y1NjVlMTI3");
+}
+#imgbox > div:nth-child(3) > img:hover{
+    content: url("https://www.rodanandfields.com/en-us/medias/Category-Image-3.png?context=bWFzdGVyfHJvb3R8MzU2OTI0fGltYWdlL3BuZ3xoNDMvaGJkLzEzOTAwNTk3MjY0NDE0LnBuZ3xhMWMzNDBiMGI0MWJmNjkwMDk2NDc0NGMxMjc4ZjljYzMzODYyYTRmNGUyNjFiYjZlOWZhOWM4ZmUzYTFjZmYz");
+}
+#imgbox > div:nth-child(4) > img:hover{
+    content: url("https://www.rodanandfields.com/en-us/medias/Category-Image-4.png?context=bWFzdGVyfHJvb3R8MzEzMzg3fGltYWdlL3BuZ3xoYjIvaDMwLzEzOTAwNTk3MzI5OTUwLnBuZ3xlOGYwOTgwZmYxNWIzNGVhNjZiN2I1NGI0NWVmZTFhOGQwYmJlOGMzZjE5NzA4ODRjNjZlMzliZDAzZjVhNDk0");
+}
+#imgbox > div:nth-child(5) > img:hover{
+    content: url("https://www.rodanandfields.com/en-us/medias/Category-Image-5.png?context=bWFzdGVyfHJvb3R8MjU0NDM1fGltYWdlL3BuZ3xoYjAvaGY4LzEzOTAwNTk3Mzk1NDg2LnBuZ3xlMmE5ZWIyN2YyYTVjZjZiZTVkZmUyZjJjODhmY2Q5MTdmMWM0NWQ1NTQ4MzFmZjM3YjUyNWI3M2NhYjI3ZTll");
+}
+#imgbox > div:nth-child(6) > img:hover{
+    content: url("https://www.rodanandfields.com/en-us/medias/Category-Image-6.png?context=bWFzdGVyfHJvb3R8Mzc1MzQ5fGltYWdlL3BuZ3xoMjEvaDdiLzEzOTAwNTk3NDYxMDIyLnBuZ3xkNjNjZjczZWMzYzM4MDIyMjA1NzIwOTgwZDM0YTU4MGIzMmY1YmZlZGM2Y2I5ODdmZWU4NDEzMjAxOTgxZGY0");
+}
+
+
+/* --------------Third image box start from here */
+
+#thirdImagebox{
+    height: 360px;
+    width: 103%;
+    /* border: 1px solid red; */
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    overflow-x: scroll;
+    overflow-y: hidden;
+    gap: 15px;
+    padding-bottom: 20px;
+}
+ #thirdImagebox>div{
+    width:710px;
+    /* border: 1px solid green; */
+    display: flex;
+
+} 
+#thirdImagebox>div:first-child{
+    background-color: #f4efe7;
+}
+#thirdImagebox>div:nth-child(2){
+    background-color: #cde2c7;
+}
+#thirdImagebox>div:nth-child(3){
+    background-color: #eee1db;
+}
+#thirdImagebox>div>div{
+    height: 100%;
+    width: 50%;
+    /* border: 1px solid red; */
+}
+#thirdImagebox>div>div:first-child{
+    height: 80%;
+    padding: 20px 20px 20px 30px;
+}
+#thirdImagebox>div>div>p{
+    line-height: 1.5;
+}
+#thirdImagebox>div>div>p:first-child{
+    /* border: 1px solid red; */
+    font-size: 40px;
+    font-style: "Open-Sans, sans-serif";
+    font-family: 'Source Serif Pro', serif;
+    font-weight: 600;
+    color: #222222;
+    line-height: 48px; 
+    letter-spacing: 2px; 
+}
+#thirdImagebox>div>div>img{
+    height: 100%;
+    width: 100%;
+    color: #222222;
+}
+#thirdImagebox>div>div>p>a{
+    text-decoration: none;
+    color: #222222;
+    border-bottom: 2px solid #222222;
+}
+
+#thirdImagebox::-webkit-scrollbar-track {
+    -box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    background-color: #F5F5F5;
+  }
+#thirdImagebox::-webkit-scrollbar {
+    width: 2px;
+    height: 7px;
+    cursor: pointer;
+    background-color: #F5F5F5;
+}
+#thirdImagebox::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+    background-color: #666666;
+}
+
+
+/*  -----------Fourth Image Box css start from here */
+
+#fourthImagebox{
+    height: 400px;
+    width: 95%;
+    /* border: 1px solid red; */
+    margin-top: 30px;
+    padding: 60px 40px 30px 85px;
+    display: flex;
+    gap: 30px;
+    background-color: #f8f8f8;
+
+}
+#fourthImagebox > div{
+    height: 100%;
+    width: 30%;
+    /* border: 1px solid blue; */
+}
+#fourthImagebox > div > img{
+    width: 100%;
+    height: 200px;
+}
+#fourthImagebox > div >img+p{
+    font-size: 25px;
+    font-family: 'Source Serif Pro', serif;
+    font-weight: 600;
+    text-align: center;
+    letter-spacing: 2px;
+}
+#fourthImagebox > div p:nth-child(3){
+    text-align: center;
+    line-height: 1.5;
+}
+#fourthImagebox > div p:nth-child(4){
+    text-align: center;
+    line-height: 1.5;
+}
+
+#fourthImagebox > div p > a{
+    text-decoration: none;
+    color: #222222;
+    border-bottom: 2px solid #222222;
+}
+
+#fourthImagebox+p{
+    font-size: 20px;
+    color: #363535;
+    font-family: 'Source Serif Pro', serif;
+    font-weight: 600;
+    color: #222;
+}
+
+  /*-------- AutoSlider image box css ------- */
+
+#slideImagebox{
+    height: 300px;
+    width: 103%;
+    /* border: 1px solid red; */
+    display: grid; 
+     grid-template-columns: repeat(16,1fr);
+     gap: 8px;
+    /* overflow-x: hidden; */
+    overflow-x: scroll;
+    overflow-y: hidden;
+
+}
+#slideImagebox > div{
+    /* border: 1px solid red; */
+    height: 300px;
+    /* width: 103%; */
+    width: 300px;
+    display: flex;
+}
+#slideImagebox img{
+    height: 300px;
+    width: 100%;
+    /* background-color: white; */
+}
+#left-angle-icon{
+    height: 39.5%;
+    width: 50px;
+    /* border: 1px solid red; */
+    position: absolute;
+    background-color: white;
+    opacity: 0.5;
+}
+#right-angle-icon{
+    height: 39.5%;
+    width: 50px;
+    /* border: 1px solid red; */
+    /* float: right; */
+    position: absolute;
+    margin-left: 1390px;
+    background-color: white;
+    opacity: 0.5;       
+}
+#hoverContent{
+    height: 100%;
+    width: 100%;
+    /* border: 1px solid blue; */
+    display: grid;
+    gap: 0px;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    visibility: hidden;
+    background-color: #eaeaea;
+    opacity: 0.7;
+    
+
+}
+#hoverContent button{
+    height: 40px;
+    width: 150px;
+    background-color: black;
+    color: aliceblue;
+    /* border: 1px solid blue; */
+    margin-top: -150px;
+    border: none;
+    border-radius: 5px;
+    font-size: 15px;
+    cursor: pointer;
+}
+.fa-instagram{
+    /* border: 1px solid blue; */
+    font-size: 30px;
+    text-align: center;
+}
+#slideImagebox div:hover #hoverContent{
+    visibility: visible;
+}
+ /* -------Bottom iMAGE CSS  --------*/
+
+ #bottomImg{
+    height: 150px;
+    width: 96%;
+    /* border: 1px solid red; */
+    margin-top: 30px;
+    background-color: #e1eaf1;
+    padding: 20px 50px 20px 50px;
+}
+#bottomImg > div{
+    height: 100%;
+    width: 85%;
+    background-color: #FFFF;
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-left: 30px;
+}
+#bottomImg > div p:first-child{
+    /* border: 1px solid red; */
+    font-size: 35px;
+    padding-left: 20px;
+    font-family: 'Source Serif Pro', serif;
+    font-weight: 600;
+    width: 350px;
+    text-align: center;
+}
+#bottomImg > div li{
+    list-style-type:disc;
+}
+#bottomImg > div button{
+    height: 35px;
+    width: 200px;
+    font-size: 17px;
+    color: #363535;
+    outline: 1px solid black;
+    border-radius: 3px;
+    border: none;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+#bottomImg > div button:hover{
+    box-shadow: none;
+    border: 0.5px solid rgb(35, 34, 34);
+}
+
+
+/* --------Footer CSS START FROM HERE-------- */
+
