@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BEST SELLER</title>
+    <link rel="stylesheet" href="./styles/navbar.css">
+    <link rel="stylesheet" href="./styles/footer.css">
+    <style>
+        #first_h{
+            text-align: center;
+            font-family:Arial,Sans-Serif ;
+            font-size: 30px;
+        }
+        #detail{
+            text-align: center;
+            height: 250px;
+            width: 50%;
+            margin: auto;
+            line-height: 25px;
+            font-size: 18px;
+            color:rgb(116, 113, 113);
+        }
+        #container{
+            display: grid;
+            
+            grid-template-columns: repeat(3,25%);
+            column-gap: 5%;
+            text-align: center;
+           margin-top: -150px;
+            text-align: center;
+            justify-content: center;
+            row-gap: 35px;
+           
+        }
+        
+        
+        #container>div>img{
+            height: 350px;
+            
+        }
+        #container>div>span{
+            color:aqua;
+            font-size: 12px;
+            font-weight: bold;
+            
+            
+
+        }
+        #container>div>button{
+            display: block;
+            margin: auto;
+            height: 10%;
+            width: 85%;
+            background-color: white;
+            /* padding-left: 120px;
+            padding-bottom: 25px; */
+            text-align: center;
+            justify-content: center;
+            font-size: large;
+            border: 1px solid black;
+            margin-top: 10px;
+            
+            
+            
+        }
+        #page{
+           
+           margin-top: 5%;
+           height: 60%;
+           width: 25%;
+           
+           text-align: center;
+           margin-left:70%
+       }
+       body{
+            margin:0px;
+            padding:0px;
+            height: 100%;
+            width: 100%;
+            overflow: scroll;
+        }
+    </style>
+</head>
+<body>
+    <div id="navbar"></div>
+    <h1 id="first_h">BEST SELLER</h1>
+    <div id="detail"><p>Shop our fan favorites. 
+        We’ve got a full range of skincare products
+         including cleansers, creams, serums + more. 
+         All created with dermatology-inspired formulas 
+         to address your skin concerns. Experience the 
+         transformative results + get the best skin of your life.</p>
+    </div>
+    <div id="container">
+
+    </div>
+
+    <img id="page" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKspenKcTgH7Z60S_E2Ttoe1h1YZg4L9VUBxuYVK5oN0S_4dVe" />
+    <div id="footer"></div>
+    
+</body>
+</html>
+
+<script type="module">
+    import { headers } from "/components/navbar.js";
+
+document.getElementById("navbar").innerHTML = headers();
+
+import { footer } from "/components/footer.js";
+
+document.getElementById("footer").innerHTML = footer();
+
+    
+const data=[
+    {
+        img:`https://www.rodanandfields.com/en-us/medias/ENHLSH01-Regimen-Explainer-R-F-Lash-Boost-570x570-Desktop.png?context=bWFzdGVyfGltYWdlc3wxMDc0OHxpbWFnZS9wbmd8aW1hZ2VzL2hmMS9oYWMvMTQ1MzIwNDI1ODgxOTAucG5nfDQyNTQ0OGUzYmMwZTJkM2YzNzE1MjE2NzQ1M2YxMWQ5M2E3ZWQ2MjAwMDA3MzFmNjQyOWUwNDU3OWZmMTkzZDY`,
+        h3:'R+F Lash Boost',
+        price:155,
+        span:" PC PERKS"
+        
+    
+    },
+    {
+        img:`https://www.rodanandfields.com/en-us/medias/TRFS-Regimen-Explainer-GLOBAL-570x570.png?context=bWFzdGVyfGltYWdlc3wyODM2M3xpbWFnZS9wbmd8aW1hZ2VzL2g5Yy9oNzcvMTM3NTgzODUzODk1OTgucG5nfGYyZGUwNzdmOWM3N2Q2M2FlMjM4Zjc4MjQxNWZkNmIzOTc0NjIyZWM3MDgyZTY3YzA5YjMyZjNhZWY3MGE3YzY`,
+        h3:"Total RF Serum",
+        price:175,
+        span:'PC PERKS'
+    },
+    {
+        img:`https://www.rodanandfields.com/en-us/medias/AAWA125-AATN125-AATT030-AAPM030-REDEFINE-Regimen-Explainer-570x570.png?context=bWFzdGVyfGltYWdlc3wzMTE2NXxpbWFnZS9wbmd8aW1hZ2VzL2hkNy9oMWMvMTM3NTgzODQwNzg4NzgucG5nfDE5NTM4Yzc1OTA0MWNiY2M5NzYwMDZhMTQ0NGVmZDEzZmRhYzVlZWE4YWRhODk3NWQ0ZGU1NDlhNzVjZTUyOTU`,
+        h3:"REDEFINE Regimen",
+        price:220,
+        span:'PC PERKS'
+    },{
+        img:`https://www.rodanandfields.com/en-us/medias/MFEC-Regimen-Explainer-GLOBAL-570x570.png?context=bWFzdGVyfGltYWdlc3wyMzc3NHxpbWFnZS9wbmd8aW1hZ2VzL2gzNS9oZmMvMTM3NTgzODU0NTUxMzQucG5nfDNmYWYyNzdiZGY5OWIyY2UzMDYyZDliYmM2YmUzMTRmOGY3Yzg0YmY1ZjY2YjgyYWU1OGNhZDZiN2IzMjViZGI  `,
+        h3:"REDEFINE Multi-Function Eye Cream",
+        price:70,
+        span:'PC PERKS'
+    },{
+        img:`https://www.rodanandfields.com/en-us/medias/ENHEFG1-570x570-Desktop.png?context=bWFzdGVyfGltYWdlc3wyMjI3N3xpbWFnZS9wbmd8aW1hZ2VzL2hkMS9oM2MvMTQ1MzIxNjY2MTUwNzAucG5nfGZlMDQ0NDRlMjczNDFlZjdkYWVmNjkwZWY4MDAwM2I4MjMwZGZiMzU3ZTViZGNlYjllNzBiZjAwY2FlZDU5NzA`,
+        h3:"Active Hydration Serum",
+        price:112,
+        span:'PC PERKS'
+    },{
+        img:`https://www.rodanandfields.com/en-us/medias/ENHEY15-720x600-DESKTOP-v4.jpg?context=bWFzdGVyfGltYWdlc3w2MDYyOXxpbWFnZS9qcGVnfGltYWdlcy9oZDcvaGI2LzEzNTMzMTczODc0NzE4LmpwZ3w0MGI1MmM0OTExMmRiMzUzYzg5YTIyNWJjZTdiOTZkNzk1ZTVmOTk2MTBhY2IzZTcwNzhkZDI4NTUxZDI5Zjhh`,
+        h3:"Active Hydration Bright Eye Complex",
+        price:72,
+        span:'PC PERKS'
+    },{
+        img:`https://www.rodanandfields.com/en-us/medias/ENBR001-720x600-DESKTOP.jpg?context=bWFzdGVyfHJvb3R8MTg2NDR8aW1hZ2UvanBlZ3xoNWMvaGQ5LzEzNTMzMTYzMDk0MDQ2LmpwZ3xiNmNjNjE3YmJmOTI4Y2UzZjAwM2RkMDQwZDNkNmNiZDQyZWQzMzQ4N2ZjZmMxOWY1OGEzYjQ1MTFiM2M1MGE5`,
+        h3:"Rodan + Fields Active Hydration Body Replenish",
+        price:66,
+        span:'PC PERKS'
+    },
+    {
+        img:`https://www.rodanandfields.com/en-us/medias/ENPS125-570x570-Desktop.png?context=bWFzdGVyfGltYWdlc3wxODU1NXxpbWFnZS9wbmd8aW1hZ2VzL2gyNi9oZjgvMTQ1MzIxNjc2MzA4NzgucG5nfGM0YTc0NjM0YWIzM2QxZDZlOTc0NTdmYjA4M2EyNDA5NGJhODg3ZDQwMGJjZjdiMTZlYTI2MjYwNjI2Y2JhZGE`,
+        h3:"Rodan + Fields Enhancements Micro-Dermabrasion Paste",
+        price:83,
+        span:'PC PERKS'
+    },
+    {
+        img:`https://www.rodanandfields.com/en-us/medias/RVWA125-RVTG125-RVSS050-RVTTG50-REVERSE-Regimen-Explainer-570x570.png?context=bWFzdGVyfGltYWdlc3w0MTY5NHxpbWFnZS9wbmd8aW1hZ2VzL2gyNy9oZWIvMTM3NTgzODQzNDEwMjIucG5nfGI3NmIzMjI0NTc2Y2RiZjZlNTdhYjg0ZDM4ZjM0MmM2M2U5Yjg5Y2RiNTM1NTM1NGFlOWNiY2E5ZTVkYTM5NWY`,
+        h3:"REVERSE Regimen",
+        price:195,
+        span:'PC PERKS'
+    },
+    {
+        img:`https://www.rodanandfields.com/en-us/medias/UNWA125-UNTJ125-UNTT030-UNSS030-UNBLEMISH-Explainer-570x570.png?context=bWFzdGVyfGltYWdlc3w1NDk5N3xpbWFnZS9wbmd8aW1hZ2VzL2g2YS9oOTYvMTM3NTgzODQ4NjUzMTAucG5nfDNhOWMxMGU5MjIzMGEyZjNhNTZjNWVkMjUxYmJjODI5YmNlODhjODBkNzJjZTA4ZDk1YTk0Yzk0ZjkyNzdhZmU`,
+        h3:"UNBLEMISH Regimen",
+        price:190,
+        span:'PC PERKS'
+    },
+    {
+        img:`https://www.rodanandfields.com/en-us/medias/SOWA125-SOTT050-SOMO050-SOSS050-SOOTHE-Regimen-Explainer-570x570.png?context=bWFzdGVyfGltYWdlc3w0MDc1MHxpbWFnZS9wbmd8aW1hZ2VzL2g5Zi9oYWMvMTM3NTgzODUxMjc0NTQucG5nfGFmOTE5ZGY1MjdhZmFkNDhhNzNiOTkyYTYzODAxNzI4OTE3ZGQ5Zjk3YzRlOGRlNTIzYzU3MzZlMTQzNGEzNTI`,
+        h3:"SOOTHE Regimen",
+        price:185,
+        span:'PC PERKS'
+    },
+    {
+        img:`https://www.rodanandfields.com/en-us/medias/RCWA125-RCTTO50-RCSP040-REGHARGE-Regimen-Explainer-570x570.png?context=bWFzdGVyfGltYWdlc3wyNTQ5NHxpbWFnZS9wbmd8aW1hZ2VzL2hkNi9oNDMvMTM3NTgzODQ2MDMxNjYucG5nfGQ4MzYxODU0ZDcxOTZiOTdlODg3NmZmZTAzZGQ1MGQ5Yjg0YzBhODk3NzJhYzM5NzZlNjQ1NjQzNGQ3NTY0ZmE`,
+        h3:"RECHARGE Regimen",
+        price:134,
+        span:'PC PERKS'
+    }
+
+]
+
+data.forEach(function (ele){
+    var div=document.createElement('div')
+
+    let img=document.createElement("img")
+    img.src=ele.img;
+
+    let h3=document.createElement('h3')
+    h3.innerText=ele.h3;
+
+    let price=document.createElement("p")
+    price.innerText=`$${ele.price}.00 with `;
+
+    let span=document.createElement("span")
+    span.innerText=ele.span
+
+    let button=document.createElement("button")
+    button.setAttribute("class","Button")
+    button.innerText="Add To Card"
+    
+    div.append(img,h3,price.innerText,span,button)
+    container.append(div)
+
+    button.addEventListener("click",function (){
+        addTocart(ele)
+    })
+})
+function addTocart(ele){
+    let addbag=JSON.parse(localStorage.getItem("product")) || []
+    addbag.push(ele)
+    localStorage.setItem("product",JSON.stringify(addbag))
+    console.log(addbag)
+}
+
+localStorage.setItem("bestseller",JSON.stringify(data))
+
+
+
+
+</script>
+<script src="./scripts/header.js" type="module"></script>
