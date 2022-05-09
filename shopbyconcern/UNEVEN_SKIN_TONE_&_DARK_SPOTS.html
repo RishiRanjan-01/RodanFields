@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="uneven.css">
+    <title>UNEVEN SKIN TONE & DARK SPOTS</title>
+    <link rel="stylesheet" href="../styles/navbar.css">
+    <link rel="stylesheet" href="../styles/footer.css">
+    <link rel="icon" href="https://media.glassdoor.com/sqll/327628/rodan-fields-squarelogo-1459275043410.png">
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script
+      src="https://kit.fontawesome.com/24c494a6b6.js"
+      crossorigin="anonymous">
+</script>
+</head>
+<body>
+  <div id="navbar"></div>
+    <div id="fin">
+        <p>UNEVEN SKIN TONE & DARK SPOTS</p>
+    </div>
+    <div id="as">
+        <P>Our targeted products help visibly reduce dullness, discoloration + early signs of aging caused by sun exposure to reveal your brightest, youngest-looking complexion yet.</P>
+    </div>
+    <div id ="container"></div>
+    <div id="footer"></div>
+</body>
+</html>
+<script type="module>
+  import { headers } from "../components/navbar.js";
+
+document.getElementById("navbar").innerHTML = headers();
+
+import { footer } from "../components/footer.js";
+
+document.getElementById("footer").innerHTML = footer();
+    
+    
+var Data = [
+{
+  image_url:
+    "https://www.rodanandfields.com/en-us/medias/HRVMR22P-720x600-desktop-1.jpg?context=bWFzdGVyfHJvb3R8MzAwMDV8aW1hZ2UvanBlZ3xoYmYvaDU2LzE0OTk2MzA2Mjk2ODYyLmpwZ3xjOTYzYzVjYTFjMGJlMGY1MmU5ZjIxOTBhYzcwZmMyZWFhYzBlODhmYmVmZmQzNzZkOTAxZjQyZWJjZmUxMjdk"  ,
+  name: "REDEFINE Regimen + Mini Specia",
+  price: "$245.00",
+  
+},
+{
+  image_url:
+    "https://www.rodanandfields.com/en-us/medias/HRVML22P-720x600-desktop-1.jpg?context=bWFzdGVyfHJvb3R8MzA5MDh8aW1hZ2UvanBlZ3xoMjgvaDViLzE0OTk2MzE3Nzk4NDMwLmpwZ3w3MTQyMTczOTlhZTU0MDY5YzJmNzFmY2NlZmM4NTgwYmNiYTgxZTMxMDg0YjQ2ZGYxODczYzJiODAzZGUxN2Zi",
+  name: "Lash Boost & REVERSE Regimen",
+  price: "$368.00 ",
+ 
+},
+{
+  image_url:
+    "https://www.rodanandfields.com/en-us/medias/HRVMS22P-720x600-desktop-1.jpg?context=bWFzdGVyfHJvb3R8MzI2MjR8aW1hZ2UvanBlZ3xoYjkvaDZlLzE1MDM4NTk1MTM3NTY2LmpwZ3w1ZjQ4M2I5ZGVjMGZkNDc5NzRlMDhlOTdjNjEyOTJlNDQxODM5NTQxNjVlOTk2MDE0MDY1MGE2N2NjZTQ2YzAw",
+  name: "Total RF Serum & REDEFINE Regimen + Mini Special",
+  price: "$384.00",
+  
+},
+{
+  image_url:
+    "https://www.rodanandfields.com/en-us/medias/RVWA125-RVTG125-RVSS050-RVTTG50-REVERSE-Regimen-Explainer-570x570.png?context=bWFzdGVyfGltYWdlc3w0MTY5NHxpbWFnZS9wbmd8aW1hZ2VzL2gyNy9oZWIvMTM3NTgzODQzNDEwMjIucG5nfGI3NmIzMjI0NTc2Y2RiZjZlNTdhYjg0ZDM4ZjM0MmM2M2U5Yjg5Y2RiNTM1NTM1NGFlOWNiY2E5ZTVkYTM5NWY",
+  name: "Targeted Dark Spot Corrector",
+  price: "$195.00",
+  
+},
+{
+  image_url:
+    "https://www.rodanandfields.com/en-us/medias/RVRMF50-cat.jpg?context=bWFzdGVyfHJvb3R8MTQ4NzJ8aW1hZ2UvanBlZ3xoYTkvaDRiLzEzNjE2MDEzMjQ2NDk0LmpwZ3w0NGQyYWM2NjM3OGIwNDdmZWYzOGJlZjBjNGMyMjk1MmNhNDY3N2Q1ZDhlZTE5NDlhNDA1ZmM3YTFiNzc5MDli",
+  name: "REDEFINE Multi-Function Eye Cream ",
+  price: "$70.00",
+  
+},
+{
+  image_url:
+    "https://www.rodanandfields.com/en-us/medias/AAAPS01-Regimen-Explainer-AMP-MD-System-570x570-Desktop.png?context=bWFzdGVyfGltYWdlc3wxODcyNnxpbWFnZS9wbmd8aW1hZ2VzL2gzNS9oNDEvMTQ2MDQwOTQ0MDY2ODYucG5nfGYyNGNkZTQ1ODc2Zjg3OGYzMjZjNDFmMTI4NTdmNzNkOWM0MmIzZTZhMzRkMDE0OTMwNjRkOTZiMDdiZTYyMjk ",
+  name: " REDEFINE AMP MD System",
+  price: "$227.00",
+ 
+},
+{
+  image_url:
+    "https://www.rodanandfields.com/en-us/medias/RVRMF50-cat.jpg?context=bWFzdGVyfHJvb3R8MTQ4NzJ8aW1hZ2UvanBlZ3xoYTkvaDRiLzEzNjE2MDEzMjQ2NDk0LmpwZ3w0NGQyYWM2NjM3OGIwNDdmZWYzOGJlZjBjNGMyMjk1MmNhNDY3N2Q1ZDhlZTE5NDlhNDA1ZmM3YTFiNzc5MDli",
+  name: " REDEFINE Rejuvenation Mask",
+  price: "$60.00",
+ 
+},
+{
+  image_url:
+    "https://www.rodanandfields.com/en-us/medias/AALS060-Regimen-Explainer-Lip-Renewing-Serum-570x570-Desktop.png?context=bWFzdGVyfGltYWdlc3wyMzc3M3xpbWFnZS9wbmd8aW1hZ2VzL2hmYi9oNDEvMTQ2MDQwOTM1ODc0ODYucG5nfGIyNTY2ZTJmMTAzMDc4MDhjZTkyYjYwZDI1MWZlNGNlZWQ2ZGIzYzc3ZjkwN2RjZDY3YmU3NDkwNDIyOWUwYWU ",
+  name: "REDEFINE Lip Renewing Serum  ",
+  price: "$58.00 ",
+  
+},
+{
+  image_url:
+    "https://www.rodanandfields.com/en-us/medias/IRS-Regimen-Explainer-GLOBAL-570x570.png?context=bWFzdGVyfGltYWdlc3w0NzYwNXxpbWFnZS9wbmd8aW1hZ2VzL2gzMy9oMmIvMTM3NTgzODU3MTcyNzgucG5nfDU3MDNlODNlMjk0MDZiYWEwODU1NTZhMDg3NDBkNTU4M2EwNGJiY2M1OTZmN2RlMWNlM2UwYmEyZDg5YzViNDM",
+  name: "REDEFINE Intensive Renewing Serum  ",
+  price: "$102.00",
+  
+},
+{
+  image_url:
+    "https://www.rodanandfields.com/en-us/medias/RVTTG50-Regimen-Explainer-Step3-AM-570x570-Desktop.png?context=bWFzdGVyfGltYWdlc3w2ODgzM3xpbWFnZS9wbmd8aW1hZ2VzL2hjZC9oNDUvMTM0MjgwMjU2NTUzMjYucG5nfDYyYzUyODI5MTA5NjM2ZWI5YjM1MDhmOWIwMjM2ODYxNDZiOTAzYjY3OGNmMGVlNWY4MjAxYjBjNzc3NzYzNDQ",
+  name: "Active Hydration Serum",
+  price: "$112.00",
+  
+},
+{
+  image_url:
+    "https://www.rodanandfields.com/en-us/medias/RVSS050-Regimen-Explainer-Step3-PM-570x570-Desktop.png?context=bWFzdGVyfGltYWdlc3w2NzQwMHxpbWFnZS9wbmd8aW1hZ2VzL2hiYS9oZWUvMTM0MjgwMjUxOTY1NzQucG5nfDVlNTcxMjlkZDFkMGI0OTQyMWE3YzZjOTNmZjQ0MGFkMWE2NTEzZmJlOTY2ZDI4NGNmZWRkODQ2MDI5ZjJjZGY",
+  name: "REVERSE Brightening Defense Fluid Lotion SPF 50  ",
+  price: "$40.00",
+  
+},
+{
+  image_url:
+    "https://www.rodanandfields.com/en-us/medias/HRVRGTRF-720x600-desktop-1.jpg?context=bWFzdGVyfGltYWdlc3w5NDMwOHxpbWFnZS9qcGVnfGltYWdlcy9oYzIvaGMzLzEzOTc3NjU2NTI0ODMwLmpwZ3wzZDI3Mzk1ZTZhMjVjMTMwMWZhMTYzNTNmZjVlYTAxM2YwMzYwYTg5OWU1NTNlYjY3MTYwNDQzNGY3ZTA4ZGY3",
+  name: "REVERSE + Total RF Serum Special ",
+  price: "$344.00 ",
+ 
+},
+];
+
+
+var cartData = JSON.parse(localStorage.getItem("cart")) || [];
+  Data.map(function (elem) {
+    var box = document.createElement("div");
+
+    var img = document.createElement("img");
+    img.src = elem.image_url;
+    img.setAttribute("id", "pic");
+
+    var name = document.createElement("h3");
+    name.textContent = elem.name;
+    name.setAttribute("id", "hi");
+
+    var price = document.createElement("p");
+    price.innerText = elem.price;
+    price.setAttribute("id", "per");
+
+    var btn = document.createElement("button");
+    btn.setAttribute("id", "bot");
+    btn.innerText = "SHOP NOW";
+    btn.addEventListener("click", function () {
+      addToCart(elem);
+    });
+
+    box.append(img, name, price, btn);
+
+    document.querySelector("#container").append(box);
+  });
+
+  function addToCart(elem) {
+    console.log(elem);
+    cartData.push(elem);
+    localStorage.setItem("cart", JSON.stringify(cartData));
+    
+  }
+</script>
+<script src="../scripts/header.js" type="module"></script>

@@ -1,0 +1,64 @@
+* {
+    font-family: 'Open Sans', sans-serif;
+font-family: 'Roboto', sans-serif;
+}
+
+#your {
+    height: 95px;
+    width: 25%;
+    margin: auto;
+    margin-top: 40px;
+    text-align: center;
+}
+#skincare {
+    height: 55px;
+    width: 68%;
+    margin: auto;
+    text-align: center;
+    margin-top: 35px;
+}
+
+#img1 {
+    height: 500px;
+    width: 85%;
+    margin: auto;
+    margin-top: 40px;
+}
+#mainbox {
+    height: 3500px;
+    width: 85%;
+    margin: 20px;
+    margin: auto;
+    margin-top: 35px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(6,1fr);
+}
+#mainbox > div {
+    height: auto;
+    width: 100%;
+    background-color: #F5F5F5;
+}
+
+ #p1 {
+   font-family: Arial, sans-serif;
+   font-size: 30px;
+   text-align: center;
+   margin-top: 225px;
+   color: #222222;
+}
+
+#p2 {
+    text-align: center;
+}
+
+button {
+    text-align: center;
+    margin-top: 30px;
+    margin-left: 182px;
+    height: 45px;
+    width: 210px;
+    background-color: white;
+    cursor: pointer;
+    
+}

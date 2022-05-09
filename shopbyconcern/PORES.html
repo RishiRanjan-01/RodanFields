@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="porecss.css">
+    <title>PORES & BLACKHEADS</title>
+    <link rel="stylesheet" href="../styles/navbar.css">
+    <link rel="stylesheet" href="../styles/footer.css">
+    <link rel="icon" href="https://media.glassdoor.com/sqll/327628/rodan-fields-squarelogo-1459275043410.png">
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script
+      src="https://kit.fontawesome.com/24c494a6b6.js"
+      crossorigin="anonymous">
+</script>
+</head>
+<body>
+  <div id="navbar"></div>
+    <div id="fin">
+        <p>PORES & BLACKHEADS</p>
+    </div>
+    <div id="as">
+        <P>Clogged pores, blackheads + congestion can lead to enlarged pores and breakouts. Help keep skin clean, clear and healthy-looking with our targeted products.</P>
+    </div>
+    <div id ="container"></div>
+    <div id="footer"></div>
+</body>
+</html>
+<script type="module">
+  import { headers } from "../components/navbar.js";
+
+document.getElementById("navbar").innerHTML = headers();
+
+import { footer } from "../components/footer.js";
+
+document.getElementById("footer").innerHTML = footer();
+    
+var Data = [
+{
+  image_url:
+    "https://www.rodanandfields.com/en-us/medias/XTPCS01-Regimen-Explainer-Pore-Cleansing-MD-System-570x570-Desktop.png?context=bWFzdGVyfGltYWdlc3wyNTc5NXxpbWFnZS9wbmd8aW1hZ2VzL2gyOC9oMjkvMTQ2MDQwOTU3ODI5NDIucG5nfGYxY2EwZWMyODQxNTM0MTE5ODRmOTlkZjZmYTY5MzE2MDZjNjE5NmZmMjE4M2U1NTNmODE3ZDJhMWI3ZTM1Y2E"  ,
+  name: "Pore Cleansing MD System",
+  price: "$270.00",
+  
+},
+{
+  image_url:
+    "https://www.rodanandfields.com/en-us/medias/RCXPSEG-720x600-desktop.jpg?context=bWFzdGVyfGltYWdlc3wxNzc1M3xpbWFnZS9qcGVnfGltYWdlcy9oMDUvaGIyLzkxNzEyNDQwODkzNzQuanBnfGU4YTdjMzZjMWY0MGE5MGJlODI5YTI5ZmM1YmI2MDE0MGU1YjI5YjIzZDE3Zjg4MTMzM2VmZGMyOTI3ZTJmNTQ",
+  name: "RECHARGE Power Up Special ",
+  price: "$393.00 ",
+ 
+},
+{
+  image_url:
+    "https://www.rodanandfields.com/en-us/medias/TAXPSEG-720x600-desktop.jpg?context=bWFzdGVyfGltYWdlc3wyMDEyOHxpbWFnZS9qcGVnfGltYWdlcy9oNDYvaDkwLzkxNzEyNDU5ODk5MTguanBnfGQ0N2UwNGZhOGUzNjAyYzM1Y2I2NjI4ZGY2NjczYzZkYWQ2OTVhY2Q3YmIwMWI1NjFkNjQ3ZmJmZWJkMWY0MmY",
+  name: "SPOTLESS Power Up Special",
+  price: "$408.00",
+  
+},
+{
+  image_url:
+    "https://www.rodanandfields.com/en-us/medias/XTGTPS2-720x600-desktop.jpg?context=bWFzdGVyfGltYWdlc3w0NDE5MnxpbWFnZS9qcGVnfGltYWdlcy9oN2UvaDIwLzkxNzEyNDcyNjc4NzAuanBnfDAxNTY5NTcxN2JjODM5Njg1NDU0ZTFkYWFkY2E5MmZhYmExNWNmZWI1MzU3ZDNkMTEyNzkyYjZmMTMyNTc3Yzg",
+  name: "Pore Cleansing Tips (8-Pack)",
+  price: "$220.00",
+  
+},
+{
+  image_url:
+    "https://www.rodanandfields.com/en-us/medias/XTBTPS2-720x600-desktop.jpg?context=bWFzdGVyfGltYWdlc3w0MTc3MXxpbWFnZS9qcGVnfGltYWdlcy9oOTIvaDA1LzkxNzEyNDcwMzg0OTQuanBnfGE0ZjgxYTU4ZjNiMTVjMGVkMWY2NWVhYWVmNDVhN2RiNzVkZmRmZTA1MWE1ZWUzZGEzNGIzMmMxNjJmN2E4YzI",
+  name: "Blackhead Removal Tips (8-Pack) ",
+  price: "$70.00",
+  
+},
+{
+  image_url:
+    "https://www.rodanandfields.com/en-us/medias/XTSPS01-720x600-desktop.jpg?context=bWFzdGVyfGltYWdlc3wxMjIzN3xpbWFnZS9qcGVnfGltYWdlcy9oMTAvaDUzLzkxNzEyNDkzMzIyNTQuanBnfDEwODQwMjA4OGRhMjExMGVlYzgwZmFkMzc4ZjljZWZjZjYyZDQxZjFiOTdlNjZmZTNiMzMxYjIwNTM3Y2Y1ZGQ",
+  name: " Pore Prep Solution",
+  price: "$227.00",
+ 
+},
+{
+  image_url:
+    "https://www.rodanandfields.com/en-us/medias/HUNXPSEG-UNWA125-UNTJ125-UNTT030-UNSS030-XTPCS01-720x600-desktop-1.jpg?context=bWFzdGVyfGltYWdlc3w0MjkxNHxpbWFnZS9qcGVnfGltYWdlcy9oYjgvaGYyLzEyNzcxNTkzMTI1OTE4LmpwZ3wxNzY4MjI4ZjYwNWJjNWE1ZTc4MjIyNzRkNTJjYjM0NGUxNTNmNDg3YWY2NzU3YTU1MDg4ODE2ODQ5NjU4MTRm ",
+  name: " REDEFINE Rejuvenation Mask",
+  price: "$60.00",
+ 
+},
+{
+  image_url:
+    "https://www.rodanandfields.com/en-us/medias/HRVAPS01-RVWA125-RVSS050-RVTTG50-AAAPS01-720x600-desktop-1.jpg?context=bWFzdGVyfGltYWdlc3w1NzcwMXxpbWFnZS9qcGVnfGltYWdlcy9oMDgvaDhhLzEyNzcxNTc5ODg3NjQ2LmpwZ3wzOWNmZWJjNjlhMzY1NjkxM2JiOThlMGUwNzJhYjk1NDQzY2E5NGQwNmNhMzIxZThkOTlhODI1YmZhNmUzYWIz",
+  name: "Lash Boost & REVERSE Regimen + Mini Special ",
+  price: "$58.00 ",
+  
+},
+{
+  image_url:
+    "https://www.rodanandfields.com/en-us/medias/HRBXPSEG-RVWA125-RVTG125-RVTTG50-RVSS050-XTPCS01-720x600-desktop-1.jpg?context=bWFzdGVyfGltYWdlc3w0NDA3OHxpbWFnZS9qcGVnfGltYWdlcy9oMDMvaGJkLzEyNzcxNTc4MjQ5MjQ2LmpwZ3w0YjY5Yjg0YWI3ODFjNGZiZDgyYTA2M2YzYTFiYmNjNzcwNjU3NWQwOGQyOGY0MDhjZTgwM2RjMWZlMjUzMjU0",
+  name: "REDEFINE Intensive Renewing Serum  ",
+  price: "$102.00",
+  
+},
+{
+  image_url:
+    "https://www.rodanandfields.com/en-us/medias/HUNXPSEG-UNWA125-UNTJ125-UNTT030-UNSS030-XTPCS01-720x600-desktop-1.jpg?context=bWFzdGVyfGltYWdlc3w0MjkxNHxpbWFnZS9qcGVnfGltYWdlcy9oYjgvaGYyLzEyNzcxNTkzMTI1OTE4LmpwZ3wxNzY4MjI4ZjYwNWJjNWE1ZTc4MjIyNzRkNTJjYjM0NGUxNTNmNDg3YWY2NzU3YTU1MDg4ODE2ODQ5NjU4MTRm ",
+  name: "UNBLEMISH Power Up Special",
+  price: "$398.00",
+  
+},
+{
+  image_url:
+    "https://www.rodanandfields.com/en-us/medias/HRVAPS01-RVWA125-RVSS050-RVTTG50-AAAPS01-720x600-desktop-1.jpg?context=bWFzdGVyfGltYWdlc3w1NzcwMXxpbWFnZS9qcGVnfGltYWdlcy9oMDgvaDhhLzEyNzcxNTc5ODg3NjQ2LmpwZ3wzOWNmZWJjNjlhMzY1NjkxM2JiOThlMGUwNzJhYjk1NDQzY2E5NGQwNmNhMzIxZThkOTlhODI1YmZhNmUzYWIz ",
+  name: "REVERSE AMP It Up Special  ",
+  price: "$373.00",
+  
+},
+{
+  image_url:
+    "https://www.rodanandfields.com/en-us/medias/HRBXPSEG-RVWA125-RVTG125-RVTTG50-RVSS050-XTPCS01-720x600-desktop-1.jpg?context=bWFzdGVyfGltYWdlc3w0NDA3OHxpbWFnZS9qcGVnfGltYWdlcy9oMDMvaGJkLzEyNzcxNTc4MjQ5MjQ2LmpwZ3w0YjY5Yjg0YWI3ODFjNGZiZDgyYTA2M2YzYTFiYmNjNzcwNjU3NWQwOGQyOGY0MDhjZTgwM2RjMWZlMjUzMjU0 ",
+  name: "REVERSE Power Up Special  ",
+  price: "$403.00 ",
+ 
+},
+];
+
+
+var cartData = JSON.parse(localStorage.getItem("product")) || [];
+  Data.map(function (elem) {
+    var box = document.createElement("div");
+
+    var img = document.createElement("img");
+    img.src = elem.image_url;
+    img.setAttribute("id", "pic");
+
+    var name = document.createElement("h4");
+    name.textContent = elem.name;
+    name.setAttribute("id", "hi");
+
+    var price = document.createElement("p");
+    price.innerText = elem.price;
+    price.setAttribute("id", "per");
+
+    var btn = document.createElement("button");
+    btn.setAttribute("id", "bot");
+    btn.innerText = "ADD TO BAG";
+    btn.addEventListener("click", function () {
+      addToCart(elem);
+    });
+
+    box.append(img, name, price, btn);
+
+    document.querySelector("#container").append(box);
+  });
+
+  function addToCart(elem) {
+    console.log(elem);
+    cartData.push(elem);
+    localStorage.setItem("product", JSON.stringify(cartData));
+  
+  }
+</script>
+<script src="../scripts/header.js" type="module"></script>

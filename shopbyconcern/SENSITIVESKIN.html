@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="SENSITIVE.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <title>SENSITIVE SKIN & VISIBLE REDNESS</title>
+    <link rel="stylesheet" href="../styles/navbar.css">
+    <link rel="stylesheet" href="../styles/footer.css">
+    <link rel="icon" href="https://media.glassdoor.com/sqll/327628/rodan-fields-squarelogo-1459275043410.png">
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script
+      src="https://kit.fontawesome.com/24c494a6b6.js"
+      crossorigin="anonymous">
+</script>
+</head>
+<body>
+  <div id="navbar"></div>
+    <div id="fin">
+        <h3>SENSITIVE SKIN & VISIBLE REDNESS</h3>
+    </div>
+    <div id="as">
+        <P>Environmental factors like weather and stress can break down skin’s natural moisture barrier which can result in visible redness, dryness and discomfort. Our targeted treatments help nourish and soothe sensitive skin as they reduce visible redness.</P>
+    </div>
+    <div id ="container"></div>
+    <div id="footer"></div>
+</body>
+</html>
+<script type="module">
+  import { headers } from "../components/navbar.js";
+
+document.getElementById("navbar").innerHTML = headers();
+
+import { footer } from "../components/footer.js";
+
+document.getElementById("footer").innerHTML = footer();
+    
+var Data = [
+{
+  image_url:
+    "https://www.rodanandfields.com/en-us/medias/HSOMR22P-720x600-desktop-1.jpg?context=bWFzdGVyfHJvb3R8MjY5NTJ8aW1hZ2UvanBlZ3xoMDIvaGVlLzE0OTk2MzA2NTkxNzc0LmpwZ3w0YzE4YTg4MjA0ZmY4N2E4NzM4MTM5M2Y3OGVkOGQxMTUwMTMzMDNjYTk0MmRkODAyNDZmNmMyODVkZDFiYWQ2"  ,
+  name: "SOOTHE Regimen + Mini Special",
+  price: "$235.00",
+  
+},
+{
+  image_url:
+    "https://www.rodanandfields.com/en-us/medias/HSOML22P-720x600-desktop-1.jpg?context=bWFzdGVyfHJvb3R8Mjg3NDF8aW1hZ2UvanBlZ3xoY2QvaDUzLzE1MDM4NTk1MzY2OTQyLmpwZ3w4NzU0NWJkZDRkZThiODk3ZDRhMzFlZjRmMDA0YzlmOWNmYjdkNjEwZDc5OTZmNTEwYTI0ZDAzODRlMWUzOWJi",
+  name: "Lash Boost & REDEFINE Regimen + Mini ",
+  price: "$357.00 ",
+ 
+},
+{
+  image_url:
+    "https://www.rodanandfields.com/en-us/medias/HAAMS22P-720x600-desktop-1.jpg?context=bWFzdGVyfHJvb3R8MzU2MTV8aW1hZ2UvanBlZ3xoNWQvaDkwLzE1MDM4NTk0Njc4ODE0LmpwZ3w0M2RjYTNjYTRmZTdkYjNhNDUyN2FhNjY1MzdkMzYxNmFjNjEwMmIwMGYyMTZjODFiNzY0MTkxZTQ5OWU2ODQ3",
+  name: "Total RF Serum & REDEFINE Regimen + Mini Special",
+  price: "$408.00",
+  
+},
+{
+  image_url:
+    "https://www.rodanandfields.com/en-us/medias/AAWA125-AATN125-AATT030-AAPM030-REDEFINE-Regimen-Explainer-570x570.png?context=bWFzdGVyfGltYWdlc3wzMTE2NXxpbWFnZS9wbmd8aW1hZ2VzL2hkNy9oMWMvMTM3NTgzODQwNzg4NzgucG5nfDE5NTM4Yzc1OTA0MWNiY2M5NzYwMDZhMTQ0NGVmZDEzZmRhYzVlZWE4YWRhODk3NWQ0ZGU1NDlhNzVjZTUyOTU",
+  name: "REDEFINE Regimen",
+  price: "$220.00",
+  
+},
+{
+  image_url:
+    "https://www.rodanandfields.com/en-us/medias/SORMF50-cat.jpg?context=bWFzdGVyfHJvb3R8MTg4MzN8aW1hZ2UvanBlZ3xoOTEvaDUzLzEzNjE1ODc4Mjc1MTAyLmpwZ3wwY2QzZDVmYTIzNDhlYjY1YjMzYWRjN2RkMzJmNzVlNGQxZWM1MTBhZjA1YjgwMzhkMWI4ZTNhMjM5ODRhMmJi",
+  name: "SOOTHE Rescue Mask ",
+  price: "$60.00",
+  
+},
+{
+  image_url:
+    "https://www.rodanandfields.com/en-us/medias/SOWA125-Regimen-Explainer-Step1-570x570-Desktop.png?context=bWFzdGVyfGltYWdlc3w0MjgzNnxpbWFnZS9wbmd8aW1hZ2VzL2g2My9oOTUvMTM0MjgwMjU5ODMwMDYucG5nfDY0OWEyMzA0Mzg3YTE0YjlhM2NiYTUxOGM3YWQ3ZGVmYWNkOGIyNmJkMzFlNzNmZGM3NDY5OGFjY2ZiMDlkYjY",
+  name: "SOOTHE Calming Gel Cleanser",
+  price: "$45.00",
+ 
+},
+{
+  image_url:
+    "https://www.rodanandfields.com/en-us/medias/AARMF50-cat.jpg?context=bWFzdGVyfHJvb3R8MTUyMTd8aW1hZ2UvanBlZ3xoYTUvaDliLzEzNjE1MDM2MTcwMjcwLmpwZ3xhM2U4ZGUyYzhhOGNhOTBiM2I0NjE4YjU1MTM5MjUwMGVhOTJhZjdlNzcwOTU2NmEwMDEwZjNmNmEyNDc1OGUz ",
+  name: "SOOTHE Daily Mineral Sunscreen SPF",
+  price: "$60.00",
+ 
+},
+{
+  image_url:
+    "https://www.rodanandfields.com/en-us/medias/AALS060-Regimen-Explainer-Lip-Renewing-Serum-570x570-Desktop.png?context=bWFzdGVyfGltYWdlc3wyMzc3M3xpbWFnZS9wbmd8aW1hZ2VzL2hmYi9oNDEvMTQ2MDQwOTM1ODc0ODYucG5nfGIyNTY2ZTJmMTAzMDc4MDhjZTkyYjYwZDI1MWZlNGNlZWQ2ZGIzYzc3ZjkwN2RjZDY3YmU3NDkwNDIyOWUwYWU ",
+  name: "SOOTHE Daily Mineral Sunscreen SPF  ",
+  price: "$58.00 ",
+  
+},
+{
+  image_url:
+    "https://www.rodanandfields.com/en-us/medias/SOSS050-Regimen-Explainer-Step4-570x570-Desktop.png?context=bWFzdGVyfGltYWdlc3wzNjYwNHxpbWFnZS9wbmd8aW1hZ2VzL2g2ZS9oNzcvMTM0MjgwMjg4NjY1OTAucG5nfGZiODQ3NmM2ZGFhMTY4ZmUyMTk1MmVhNzg2ZmRmNjUyMWYxZTZjYjk0Y2I2ZWU2ZjdlZjcxOWRhMTc5ZWQ2ZTc",
+  name: "SOOTHE Daily Mineral Sunscreen SPF ",
+  price: "$102.00",
+  
+},
+{
+  image_url:
+    "https://www.rodanandfields.com/en-us/medias/HSORGTRF-SOWA125-SOTT050-SOMO050-SOSS050-ENFM030-900x900-tablet-1.jpg?context=bWFzdGVyfGltYWdlc3wxMTAzNjF8aW1hZ2UvanBlZ3xpbWFnZXMvaGY3L2g5MS8xMzk3NzY1Nzc3MDAxNC5qcGd8ZDhkOGZhNDhhNjAwMTdjN2YxNmRhMjlkYjkzZmVjYzgyMTcwY2VhMmNlMjhlZDQ5NGJhMzExNWQxNjljYjM0Mg",
+  name: "SOOTHE + Total RF Serum Special",
+  price: "$323.00",
+  
+},
+{
+  image_url:
+    "https://www.rodanandfields.com/en-us/medias/HSORGLP1-SOWA125-SOTT050-SOMO050-SOSS050-ENHLSH01-720x600-desktop-1.jpg?context=bWFzdGVyfGltYWdlc3w0MTg3OHxpbWFnZS9qcGVnfGltYWdlcy9oOTUvaGQ1LzEyNzcxNTg3MTk0OTEwLmpwZ3w2Y2Q0ZmI5MDMwYzdmYTEwMGUzYzU4M2NiZGRkMWYxOTQ2MWIwMDAwMDIyYTEzYzI4YzUzNTZmMjZhZjNkMTRi",
+  name: "SOOTHE + Lash Boost Special  ",
+  price: "$307.00",
+  
+},
+
+];
+
+
+var cartData = JSON.parse(localStorage.getItem("product")) || [];
+  Data.map(function (elem) {
+    var box = document.createElement("div");
+
+    var img = document.createElement("img");
+    img.src = elem.image_url;
+    img.setAttribute("id", "pic");
+
+    var name = document.createElement("h3");
+    name.textContent = elem.name;
+    name.setAttribute("id", "hi");
+
+    var price = document.createElement("p");
+    price.innerText = elem.price;
+    price.setAttribute("id", "per");
+
+    var btn = document.createElement("button");
+    btn.setAttribute("id", "bot");
+    btn.innerText = "ADD TO BAG";
+    btn.addEventListener("click", function () {
+      addToCart(elem);
+    });
+
+    box.append(img, name, price, btn);
+
+    document.querySelector("#container").append(box);
+  });
+
+  function addToCart(elem) {
+    console.log(elem);
+    cartData.push(elem);
+    localStorage.setItem("product", JSON.stringify(cartData));
+    
+  }
+</script>
+<script src="../scripts/header.js" type="module"></script>

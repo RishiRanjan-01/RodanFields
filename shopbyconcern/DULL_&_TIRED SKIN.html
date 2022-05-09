@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="dull.css">
+    <title>DULL & TIRED SKIN</title>
+    <link rel="stylesheet" href="../styles/navbar.css">
+    <link rel="stylesheet" href="../styles/footer.css">
+    <link rel="icon" href="https://media.glassdoor.com/sqll/327628/rodan-fields-squarelogo-1459275043410.png">
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script
+      src="https://kit.fontawesome.com/24c494a6b6.js"
+      crossorigin="anonymous">
+</script>
+</head>
+<body>
+  <div id="navbar"></div>
+    <div id="fin">
+        <h3>DULL & TIRED SKIN</h3>
+    </div>
+    <div id="as">
+        <P>Daily stressors like UV rays, pollution, diet and stress can make skin dull, blotchy and dry. Our RECHARGE products balance, boost and defend skin to reveal your healthiest<br>-looking complexion.
+
+        </P>
+    </div>
+    <div id ="container"></div>
+    <div id="footer"></div>
+</body>
+</html>
+<script type="module">
+  import { headers } from "../components/navbar.js";
+
+document.getElementById("navbar").innerHTML = headers();
+
+import { footer } from "../components/footer.js";
+
+document.getElementById("footer").innerHTML = footer();
+    
+var Data = [
+{
+  image_url:
+    "https://www.rodanandfields.com/en-us/medias/RCWA125-RCTTO50-RCSP040-REGHARGE-Regimen-Explainer-570x570.png?context=bWFzdGVyfGltYWdlc3wyNTQ5NHxpbWFnZS9wbmd8aW1hZ2VzL2hkNi9oNDMvMTM3NTgzODQ2MDMxNjYucG5nfGQ4MzYxODU0ZDcxOTZiOTdlODg3NmZmZTAzZGQ1MGQ5Yjg0YzBhODk3NzJhYzM5NzZlNjQ1NjQzNGQ3NTY0ZmE"  ,
+  name: "RECHARGE Regimen",
+  price: "$134.00",
+  
+},
+{
+  image_url:
+    "https://www.rodanandfields.com/en-us/medias/RCDMF50-720x600-desktop-1.jpg?context=bWFzdGVyfGltYWdlc3wxNDYyN3xpbWFnZS9qcGVnfGltYWdlcy9oMjYvaDYzLzEzNjE1ODcyMjEzMDIyLmpwZ3xmYWJlZGQ0ZDc0ZmUwYzUwNWM3ODMyZGUyZDlkZjA1NjBmZDMxZmU0ZDlmZjdkNDQwZDhkNWVmOGQ4YjlmYTQ3",
+  name: "RECHARGE Detox Mask ",
+  price: "$60.00 ",
+ 
+},
+{
+  image_url:
+    "https://www.rodanandfields.com/en-us/medias/RCWA125-720x600-desktop.jpg?context=bWFzdGVyfGltYWdlc3wxMjA3MnxpbWFnZS9qcGVnfGltYWdlcy9oNWMvaGY0LzkxNzEyNDM0MDEyNDYuanBnfDJhMjdiNWE2NjQ0ODZjMGMwMDJkZWJlNDVhMGRhMmM5ODE2OTY0Mzg1NTc1NDRjOTczZTZjZGE0NzNmOWYzOTQ",
+  name: "RECHARGE 3-in-1 Super Cleanser",
+  price: "$40.00",
+  
+},
+{
+  image_url:
+    "https://www.rodanandfields.com/en-us/medias/RCTT050-720x600-desktop.jpg?context=bWFzdGVyfGltYWdlc3wxMTk0NXxpbWFnZS9qcGVnfGltYWdlcy9oY2EvaDdjLzkxNzEyNDI2ODAzNTAuanBnfGU3NzViZGQ3Y2FhZmM2MjdmZTQ1YWQ0OGMxYTFhZmFkNDkwYTRjOWNlYWI3OWY5ZmRlYWNlOTRmODFjZWNhOTU",
+  name: "RECHARGE Ultra Boost Moisturizing Treatment",
+  price: "$80.00",
+  
+},
+{
+  image_url:
+    "https://www.rodanandfields.com/en-us/medias/RCSP040-720x600-desktop.jpg?context=bWFzdGVyfGltYWdlc3wxMjgxOXxpbWFnZS9qcGVnfGltYWdlcy9oNjEvaDIyLzkxNzEyNDIwMjQ5OTAuanBnfDIyNmU3MTAxZjRiOWY5YjFiZjEzNGZkNDhlOGQ0M2EyYzFhOGFmYzI2ODAzNjc5NjY5NzI4OWVjZmQyNjljOWU",
+  name: "RECHARGE Protect + Blur Broad Spectrum SPF 30 Sunscreen",
+  price: "$48.00",
+  
+},
+{
+  image_url:
+    "https://www.rodanandfields.com/en-us/medias/RCLBES1-720x600-desktop.jpg?context=bWFzdGVyfGltYWdlc3wxOTIwM3xpbWFnZS9qcGVnfGltYWdlcy9oYWYvaDY2LzkxNzEyMzg3NDgxOTAuanBnfDIzM2NlODM0ODNjNTgxYThiMDAyMGJlYWEwMzRiZmU4ZDJiNThkODM3OTFmMmJhZjNmMzFmNDE3ODk5OWVhMzg",
+  name: " RECHARGE + Lash Boost Special",
+  price: "$256.00",
+ 
+},
+{
+  image_url:
+    "https://www.rodanandfields.com/en-us/medias/AARMF50-cat.jpg?context=bWFzdGVyfHJvb3R8MTUyMTd8aW1hZ2UvanBlZ3xoYTUvaDliLzEzNjE1MDM2MTcwMjcwLmpwZ3xhM2U4ZGUyYzhhOGNhOTBiM2I0NjE4YjU1MTM5MjUwMGVhOTJhZjdlNzcwOTU2NmEwMDEwZjNmNmEyNDc1OGUz ",
+  name: " REDEFINE Rejuvenation Mask",
+  price: "$60.00",
+ 
+},
+{
+  image_url:
+    "https://www.rodanandfields.com/en-us/medias/AALS060-Regimen-Explainer-Lip-Renewing-Serum-570x570-Desktop.png?context=bWFzdGVyfGltYWdlc3wyMzc3M3xpbWFnZS9wbmd8aW1hZ2VzL2hmYi9oNDEvMTQ2MDQwOTM1ODc0ODYucG5nfGIyNTY2ZTJmMTAzMDc4MDhjZTkyYjYwZDI1MWZlNGNlZWQ2ZGIzYzc3ZjkwN2RjZDY3YmU3NDkwNDIyOWUwYWU ",
+  name: "REDEFINE Lip Renewing Serum  ",
+  price: "$58.00 ",
+  
+},
+{
+  image_url:
+    "https://www.rodanandfields.com/en-us/medias/IRS-Regimen-Explainer-GLOBAL-570x570.png?context=bWFzdGVyfGltYWdlc3w0NzYwNXxpbWFnZS9wbmd8aW1hZ2VzL2gzMy9oMmIvMTM3NTgzODU3MTcyNzgucG5nfDU3MDNlODNlMjk0MDZiYWEwODU1NTZhMDg3NDBkNTU4M2EwNGJiY2M1OTZmN2RlMWNlM2UwYmEyZDg5YzViNDM",
+  name: "REDEFINE Intensive Renewing Serum  ",
+  price: "$102.00",
+  
+},
+{
+  image_url:
+    "https://www.rodanandfields.com/en-us/medias/HRCRGTRF-720x600-desktop-1.jpg?context=bWFzdGVyfGltYWdlc3w3ODAwMXxpbWFnZS9qcGVnfGltYWdlcy9oNmYvaGE3LzEzOTc3NjU1NTc0NTU4LmpwZ3w3MjA1Y2RhNjE1N2VhNWFkN2U3ZDUyNmVkY2NkZWI5MWNhNzQ0N2QxN2U4ZjE1ODYxZDIxMmI1MzA1Y2UyZmEy",
+  name: "RECHARGE + Total RF Serum Special",
+  price: "$227.00",
+  
+},
+{
+  image_url:
+    "https://www.rodanandfields.com/en-us/medias/ENHEY15-720x600-DESKTOP-v4.jpg?context=bWFzdGVyfGltYWdlc3w2MDYyOXxpbWFnZS9qcGVnfGltYWdlcy9oZDcvaGI2LzEzNTMzMTczODc0NzE4LmpwZ3w0MGI1MmM0OTExMmRiMzUzYzg5YTIyNWJjZTdiOTZkNzk1ZTVmOTk2MTBhY2IzZTcwNzhkZDI4NTUxZDI5Zjhh ",
+  name: "RECHARGE Power Up Special  ",
+  price: "$342.00",
+  
+},
+
+];
+
+
+var cartData = JSON.parse(localStorage.getItem("cart")) || [];
+  Data.map(function (elem) {
+    var box = document.createElement("div");
+
+    var img = document.createElement("img");
+    img.src = elem.image_url;
+    img.setAttribute("id", "pic");
+
+    var name = document.createElement("h4");
+    name.textContent = elem.name;
+    name.setAttribute("id", "hi");
+
+    var price = document.createElement("p");
+    price.innerText = elem.price;
+    price.setAttribute("id", "per");
+
+    var btn = document.createElement("button");
+    btn.setAttribute("id", "bot");
+    btn.innerText = "SHOP NOW";
+    btn.addEventListener("click", function () {
+      addToCart(elem);
+    });
+
+    box.append(img, name, price, btn);
+
+    document.querySelector("#container").append(box);
+  });
+
+  function addToCart(elem) {
+    console.log(elem);
+    cartData.push(elem);
+    localStorage.setItem("cart", JSON.stringify(cartData));
+    
+  }
+</script>
+<script src="../scripts/header.js" type="module"></script>

@@ -1,0 +1,164 @@
+
+* {
+    font-family: 'Open Sans', sans-serif;
+font-family: 'Roboto', sans-serif;
+}
+
+#THE {
+    height: 40px;
+    width: 27%;
+    margin: auto;
+    
+}
+
+#ourskin {
+    height: 20px;
+    width: 20%;
+    margin: auto;
+    
+}
+
+#Wemake {
+    height: 20px;
+    width: 58%;
+    margin: auto;
+    margin-top: 0px;
+   
+}
+
+#btn1 {
+    margin: auto;
+    width: 18%;
+    margin-top: 35px;
+    color: white;
+}
+
+#btn1 > button {
+    height: 45px;
+    width: 100%;
+    color: white; 
+    background-color: black;
+    cursor: pointer;   
+}
+a {
+    color: #F5F5F5;
+}
+
+#der {
+    margin: auto;
+    width: 26%;
+    margin-top: 50px;
+}
+
+#We {
+    height: 10px;
+    width: 70%;
+    margin: auto;
+    margin-top: 15px;
+}
+
+#formulate {
+    height: 35px;
+    width: 44%;
+    margin: auto;
+}
+
+#mainbox {
+    display: flex;
+    height: 450px;
+    width: 89%;
+    margin: auto;
+    margin-top: 45px;
+}
+
+#mainbox > div {
+    height: 100%;
+    width: 31%;
+    margin: auto;
+
+}
+
+#mainbox > div > h3 {
+    margin-left: 65px;
+    margin-top: 18px;
+
+}
+
+#mainbox > div > p {
+    margin: auto;
+    text-align: center;
+    font-size: 14px;
+  
+}
+
+#what {
+     height: 50px;
+     width : 38%;
+     margin: auto;
+     margin-top: 60px;
+}
+
+#allbox {
+    height: 1600px;
+    width: 80%;
+    margin: auto;
+    margin-top: 60px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+}
+
+#allbox > div {
+    height: auto;
+    width: 100%;
+}
+
+#allbox > #b {
+    background-color: #F5F5F5;
+    text-align: center;
+}
+
+#allbox > #b > h1 {
+    margin-top: 210px;
+}
+
+#VISIBLE {
+    height: 50px;
+    width: 245px;
+    margin: auto;
+    margin-top: 75px;
+}
+
+#don {
+    height: 35px;
+    width: 488px;
+    margin: auto;
+    margin-top: 30px;
+}
+#before {
+    height: 1420px;
+    width: 82%;
+    margin-top: 75px;
+    margin-left: 120px; 
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(7,1fr);
+    gap: 10px;
+}
+#before > div {
+    height: 465px;
+    width: 100%;
+}
+
+#before > div > h3 {
+    text-align: center;
+}
+
+#before > div > p {
+    text-align: center;
+   
+}
+ 
+#before > div > u {
+   margin-left: 130px;
+}
