@@ -1,0 +1,56 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    height: 100%;
+    width: 100%;
+    overflow: scroll;
+}
+
+#fin {
+    height: 40px;
+    width: 39%;
+    margin: auto;
+    margin-top: 65px;
+    font-size: 30px;
+}
+#as {
+    height: 75px;
+    width: 39%;
+    margin: auto;
+    margin-top: 05px;
+    font-size: 16px;
+    text-align: center;
+}
+
+#container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    width: 85%;
+    margin: auto;
+    margin-top: 30px;
+    margin-left: 135px;
+  }
+
+
+   #pic {
+      height: 70%;
+      width: 100%;
+  }
+
+
+#hi {
+    text-align: center;
+}
+
+#per {
+    text-align: center;
+}
+
+#bot {
+    margin-left: 55px;
+    height: 50px;
+    width: 280px;
+    background-color: white;
+    color: #222222;
+}

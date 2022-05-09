@@ -1,0 +1,88 @@
+#meet {
+    height: 55px;
+    width: 27%;
+    margin: auto;
+    margin-top: 65px;
+}
+
+#dr {
+    height: 59px;
+    width: 70%;
+    margin: auto;
+    margin-top: 35px;
+    font-size: 16px;
+    text-align: center;
+}
+
+#main_img {
+    height: 550px;
+    width: 85%;
+    margin: auto;
+    margin-top: 68px;
+}
+
+#grid {
+    height: 2500px;
+    width: 85%;
+    margin: auto;
+    margin-top: 35px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+}
+
+#grid > div {
+    background-color: #F5F5F5;
+    height: 100%;
+    width: 100%;
+}
+
+#p1 {
+    font-size: 30px;
+    text-align: center;
+    margin-top: 50%;
+}
+
+#p2 {
+    font-size: 17px;
+    text-align: center;
+}
+
+#evo {
+    height: 60px;
+    width: 30%;
+    margin: auto;
+    margin-top: 35px;
+    font-size: 30px;
+}
+
+#mainbox {
+    height: 978px;
+    width: 85%;
+    margin: auto;
+    display: grid;
+    gap: 15px;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(2,1fr);
+}
+
+#mainbox > div {
+    height: 90%;
+    width: 100%;
+}
+#mainbox > div > p{
+    margin-top: 35px;
+    text-align: center;
+}
+
+#list {
+    height: 50px;
+    width: 85%;
+    margin: auto;
+    margin-top: 80px;
+}
+
+#list > p{
+    margin-top: -16px;
+    font-size: 13px;
+}

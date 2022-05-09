@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="fineline.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <title>FINE LINES & WRINKLES</title>
+    <link rel="stylesheet" href="../styles/navbar.css">
+    <link rel="stylesheet" href="../styles/footer.css">
+    <link rel="icon" href="https://media.glassdoor.com/sqll/327628/rodan-fields-squarelogo-1459275043410.png">
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script
+      src="https://kit.fontawesome.com/24c494a6b6.js"
+      crossorigin="anonymous">
+</script>
+</head>
+<body>
+  <div id="navbar"></div>
+    <div id="fin">
+        <h3>FINE LINES & WRINKLES</h3>
+    </div>
+    <div id="as">
+        <P>As we age, our skin’s natural processes slow down, causing visible signs of aging. Our targeted products help reduce the appearance of fine lines and wrinkles for younger-looking skin.</P>
+    </div>
+    <div id ="container"></div>
+    <div id="footer"></div>
+</body>
+</html>
+<script type="module">
+  import { headers } from "../components/navbar.js";
+
+document.getElementById("navbar").innerHTML = headers();
+
+import { footer } from "../components/footer.js";
+
+document.getElementById("footer").innerHTML = footer();
+    
+var Data = [
+{
+  image_url:
+    "https://www.rodanandfields.com/en-us/medias/HAAMR22P-720x600-desktop-1.jpg?context=bWFzdGVyfHJvb3R8MzI2MTh8aW1hZ2UvanBlZ3xoYzQvaGNmLzE0OTk2MzA1OTM2NDE0LmpwZ3w1M2RjYWNhODE0YTVjNTc5ZWNhOWM2NWMzZTA1M2JmYTQyZjRkNzI3NWZjNjViNTAzYzM3OTk5Y2VjYjJlMDMz"  ,
+  name: "REDEFINE Regimen + Mini Specia",
+  price: "$270.00",
+  
+},
+{
+  image_url:
+    "https://www.rodanandfields.com/en-us/medias/HAAML22P-720x600-desktop-1.jpg?context=bWFzdGVyfHJvb3R8MzQwMjF8aW1hZ2UvanBlZ3xoNWQvaGViLzE0OTk2MzE3NDA1MjE0LmpwZ3xiNTU3MjhjZjZmMDQxNDk4NjAwNzc3ZmUwZWNjMGU0NDdiNmY0NTUyYjM5ZDEzNDUzZDE2OTljMmVhNTU4Njdi",
+  name: "Lash Boost & REDEFINE Regimen + Mini Special ",
+  price: "$393.00 ",
+ 
+},
+{
+  image_url:
+    "https://www.rodanandfields.com/en-us/medias/HAAMS22P-720x600-desktop-1.jpg?context=bWFzdGVyfHJvb3R8MzU2MTV8aW1hZ2UvanBlZ3xoNWQvaDkwLzE1MDM4NTk0Njc4ODE0LmpwZ3w0M2RjYTNjYTRmZTdkYjNhNDUyN2FhNjY1MzdkMzYxNmFjNjEwMmIwMGYyMTZjODFiNzY0MTkxZTQ5OWU2ODQ3",
+  name: "Total RF Serum & REDEFINE Regimen + Mini Special",
+  price: "$408.00",
+  
+},
+{
+  image_url:
+    "https://www.rodanandfields.com/en-us/medias/AAWA125-AATN125-AATT030-AAPM030-REDEFINE-Regimen-Explainer-570x570.png?context=bWFzdGVyfGltYWdlc3wzMTE2NXxpbWFnZS9wbmd8aW1hZ2VzL2hkNy9oMWMvMTM3NTgzODQwNzg4NzgucG5nfDE5NTM4Yzc1OTA0MWNiY2M5NzYwMDZhMTQ0NGVmZDEzZmRhYzVlZWE4YWRhODk3NWQ0ZGU1NDlhNzVjZTUyOTU",
+  name: "REDEFINE Regimen",
+  price: "$220.00",
+  
+},
+{
+  image_url:
+    "https://www.rodanandfields.com/en-us/medias/MFEC-Regimen-Explainer-GLOBAL-570x570.png?context=bWFzdGVyfGltYWdlc3wyMzc3NHxpbWFnZS9wbmd8aW1hZ2VzL2gzNS9oZmMvMTM3NTgzODU0NTUxMzQucG5nfDNmYWYyNzdiZGY5OWIyY2UzMDYyZDliYmM2YmUzMTRmOGY3Yzg0YmY1ZjY2YjgyYWU1OGNhZDZiN2IzMjViZGI",
+  name: "REDEFINE Multi-Function Eye Cream ",
+  price: "$70.00",
+  
+},
+{
+  image_url:
+    "https://www.rodanandfields.com/en-us/medias/AAAPS01-Regimen-Explainer-AMP-MD-System-570x570-Desktop.png?context=bWFzdGVyfGltYWdlc3wxODcyNnxpbWFnZS9wbmd8aW1hZ2VzL2gzNS9oNDEvMTQ2MDQwOTQ0MDY2ODYucG5nfGYyNGNkZTQ1ODc2Zjg3OGYzMjZjNDFmMTI4NTdmNzNkOWM0MmIzZTZhMzRkMDE0OTMwNjRkOTZiMDdiZTYyMjk ",
+  name: " REDEFINE AMP MD System",
+  price: "$227.00",
+ 
+},
+{
+  image_url:
+    "https://www.rodanandfields.com/en-us/medias/AARMF50-cat.jpg?context=bWFzdGVyfHJvb3R8MTUyMTd8aW1hZ2UvanBlZ3xoYTUvaDliLzEzNjE1MDM2MTcwMjcwLmpwZ3xhM2U4ZGUyYzhhOGNhOTBiM2I0NjE4YjU1MTM5MjUwMGVhOTJhZjdlNzcwOTU2NmEwMDEwZjNmNmEyNDc1OGUz ",
+  name: " REDEFINE Rejuvenation Mask",
+  price: "$60.00",
+ 
+},
+{
+  image_url:
+    "https://www.rodanandfields.com/en-us/medias/AALS060-Regimen-Explainer-Lip-Renewing-Serum-570x570-Desktop.png?context=bWFzdGVyfGltYWdlc3wyMzc3M3xpbWFnZS9wbmd8aW1hZ2VzL2hmYi9oNDEvMTQ2MDQwOTM1ODc0ODYucG5nfGIyNTY2ZTJmMTAzMDc4MDhjZTkyYjYwZDI1MWZlNGNlZWQ2ZGIzYzc3ZjkwN2RjZDY3YmU3NDkwNDIyOWUwYWU ",
+  name: "REDEFINE Lip Renewing Serum  ",
+  price: "$58.00 ",
+  
+},
+{
+  image_url:
+    "https://www.rodanandfields.com/en-us/medias/IRS-Regimen-Explainer-GLOBAL-570x570.png?context=bWFzdGVyfGltYWdlc3w0NzYwNXxpbWFnZS9wbmd8aW1hZ2VzL2gzMy9oMmIvMTM3NTgzODU3MTcyNzgucG5nfDU3MDNlODNlMjk0MDZiYWEwODU1NTZhMDg3NDBkNTU4M2EwNGJiY2M1OTZmN2RlMWNlM2UwYmEyZDg5YzViNDM",
+  name: "REDEFINE Intensive Renewing Serum  ",
+  price: "$102.00",
+  
+},
+{
+  image_url:
+    "https://www.rodanandfields.com/en-us/medias/ENHEFG1-570x570-Desktop.png?context=bWFzdGVyfGltYWdlc3wyMjI3N3xpbWFnZS9wbmd8aW1hZ2VzL2hkMS9oM2MvMTQ1MzIxNjY2MTUwNzAucG5nfGZlMDQ0NDRlMjczNDFlZjdkYWVmNjkwZWY4MDAwM2I4MjMwZGZiMzU3ZTViZGNlYjllNzBiZjAwY2FlZDU5NzA ",
+  name: "Active Hydration Serum",
+  price: "$112.00",
+  
+},
+{
+  image_url:
+    "https://www.rodanandfields.com/en-us/medias/ENHEY15-720x600-DESKTOP-v4.jpg?context=bWFzdGVyfGltYWdlc3w2MDYyOXxpbWFnZS9qcGVnfGltYWdlcy9oZDcvaGI2LzEzNTMzMTczODc0NzE4LmpwZ3w0MGI1MmM0OTExMmRiMzUzYzg5YTIyNWJjZTdiOTZkNzk1ZTVmOTk2MTBhY2IzZTcwNzhkZDI4NTUxZDI5Zjhh ",
+  name: "Active Hydration Bright Eye Complex  ",
+  price: "$72.00",
+  
+},
+{
+  image_url:
+    "https://www.rodanandfields.com/en-us/medias/ENBR001-720x600-DESKTOP.jpg?context=bWFzdGVyfHJvb3R8MTg2NDR8aW1hZ2UvanBlZ3xoNWMvaGQ5LzEzNTMzMTYzMDk0MDQ2LmpwZ3xiNmNjNjE3YmJmOTI4Y2UzZjAwM2RkMDQwZDNkNmNiZDQyZWQzMzQ4N2ZjZmMxOWY1OGEzYjQ1MTFiM2M1MGE5 ",
+  name: "Rodan + Fields Active Hydration Body Replenish  ",
+  price: "$66.00 ",
+ 
+},
+];
+
+
+var cartData = JSON.parse(localStorage.getItem("product")) || [];
+  Data.map(function (elem) {
+    var box = document.createElement("div");
+
+    var img = document.createElement("img");
+    img.src = elem.image_url;
+    img.setAttribute("id", "pic");
+
+    var name = document.createElement("h3");
+    name.textContent = elem.name;
+    name.setAttribute("id", "hi");
+
+    var price = document.createElement("p");
+    price.innerText = elem.price;
+    price.setAttribute("id", "per");
+
+    var btn = document.createElement("button");
+    btn.setAttribute("id", "bot");
+    btn.innerText = "ADD TO BAG";
+    btn.addEventListener("click", function () {
+      addToCart(elem);
+    });
+
+    box.append(img, name, price, btn);
+
+    document.querySelector("#container").append(box);
+  });
+
+  function addToCart(elem) {
+    console.log(elem);
+    cartData.push(elem);
+    localStorage.setItem("product", JSON.stringify(cartData));
+   
+  }
+</script>
+<script src="../scripts/header.js" type="module"></script>
