@@ -12,6 +12,8 @@
       src="https://kit.fontawesome.com/24c494a6b6.js"
       crossorigin="anonymous">
     </script>
+    <link rel="icon" href="https://media.glassdoor.com/sqll/327628/rodan-fields-squarelogo-1459275043410.png">
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <style>
         body{
             margin: 0px;
@@ -59,11 +61,11 @@
 
 
 <script type="module">
-    import { headers } from "../components/navbar.js";
+    import { headers } from "./components/navbar.js";
 
     document.getElementById("navbar").innerHTML = headers();
 
-    import { footer } from "../components/footer.js"
+    import { footer } from "./components/footer.js"
 
     document.getElementById("footer").innerHTML = footer();
 
@@ -109,6 +111,8 @@
     
 }
 
-   document.getElementById("query").addEventListener("keydown",SearchFun)
+   document.getElementById("query").addEventListener("keydown",SearchFun);
+   
+
 </script>
 <script src="./scripts/header.js" type="module"></script>

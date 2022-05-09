@@ -5,14 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./styles/navbar.css">
+    <link rel="stylesheet" href="./styles/footer.css">
+    <link rel="icon" href="https://media.glassdoor.com/sqll/327628/rodan-fields-squarelogo-1459275043410.png">
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <style>
-        a{
-            color: rgb(36, 34, 34);
-            text-decoration: none;
-            font-size: 20px;
-        }
+       
         #divine{
- display: flex;
+          display: flex;
         }
         #divine>div{
            
@@ -51,6 +52,10 @@
             width: 100%;
             height: 200px;
         }
+        body{
+            margin: 0px;
+            padding: 0px;
+        }
     </style>
        <link
        rel="stylesheet"
@@ -58,14 +63,15 @@
      />
 </head>
 <body>
+    <div id="navbar"></div>
     
-    <div id="container" style="width: 100%;height: 500px;margin: auto;">
+    <div id="container" style="width: 90%;height: 500px;margin: auto; ">
         <iframe width="1349" height="400" src="https://www.youtube.com/embed/bkcHI5byXOw" 
         title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
         encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
 
-    <div style="width: 100%;height: 600px;margin-top: -100px;display: flex;">
+    <div style="width: 102%;height: 600px;margin-top: -100px;display: flex; margin-left:25px">
         <div style="width: 33%;height: 100%;background-color: #6B96B7A6;margin-top: 30px;">
 
             <p style="font-size: 30px;padding: 150px 30px 80px 30px;color: rgb(39, 36, 36);">Build a Business. Join a Community. Make a Difference.</p>
@@ -198,5 +204,15 @@
   
 
 </div>
+<div id="footer"></div>
 </body>
 </html>
+<script type="module">
+    import { headers } from "./components/navbar.js";
+
+document.getElementById("navbar").innerHTML = headers();
+
+import { footer } from "./components/footer.js";
+document.getElementById("footer").innerHTML = footer();
+</script>
+<script src="./scripts/header.js" type="module"></script>

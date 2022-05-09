@@ -92,7 +92,7 @@ document.getElementById("lang").addEventListener("click",ShowLangFun)
 //   cart box show function
 
 let cartBoxShow = ()=>{
-
+    window.location.href = "cart/bag.html"
     if(cart_box.style.display == "none"){
         cart_box.style.display = "block"
     }

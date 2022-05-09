@@ -7,6 +7,12 @@
     <title>pcpeeks</title>
     <link rel="stylesheet" href="./styles/navbar.css">
     <link rel="stylesheet" href="./styles/footer.css">
+    <link rel="icon" href="https://media.glassdoor.com/sqll/327628/rodan-fields-squarelogo-1459275043410.png">
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script
+      src="https://kit.fontawesome.com/24c494a6b6.js"
+      crossorigin="anonymous">
+</script>
     
     <style>
         #logo{
@@ -62,11 +68,32 @@
             text-align: center;
             
         }
-        img{
-            height:100%;
+        #container2 img {
+            height: 100%;
             width: 100%;
 
         }
+        
+
+        .detail {
+            margin-top: 40%;
+            margin-left: 10%;
+            margin-right: 10%;
+
+
+
+        }
+        #shopnow{
+            cursor: pointer;
+            outline: 1px solid violet;
+            border: none;
+            border-radius: 3px;
+        }
+        #shopnow:hover{
+            outline: none;
+            border: 1px solid black;
+        }
+        
         .detail{
            margin-top: 40%;
            margin-left: 10%;
@@ -135,7 +162,7 @@
             <div class="detail">
                 <h2>HOW TO ENROLL</h2>
                 <p>Add the products you want to your cart and check the PC Perks box in your shopping bag to opt in on any order $80+</p>
-                <button>SHOP NOW</button>
+                <button id="shopnow">SHOP NOW</button>
             </div>
         </div>
         <div>
@@ -232,7 +259,11 @@ data.forEach(function (ele) {
     
 })
 
+let MyFun = ()=>{
+    window.location.href = "shop_specialoffer10.html"
+}
 
+document.getElementById("shopnow").addEventListener("click",MyFun)
 
 </script>
 

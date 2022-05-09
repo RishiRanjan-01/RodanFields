@@ -3,7 +3,7 @@ let headers = ()=>{
     <p>Limited time! Buy a full-size + mini regimen and get a FREE gift. <a href="">Shop Offer</a></p>
 </div>
 <div id="navbar01">
-    <p id="find-consultant"><a href="">FIND A CONSULTANT</a></p>
+    <p id="find-consultant"><a href="findAConsultant.html">FIND A CONSULTANT</a></p>
     <img id="rodanimg"
         src="https://www.rodanandfields.com/en-us/medias/rf-logo.svg?context=bWFzdGVyfGltYWdlc3w3MzczfGltYWdlL3N2Zyt4bWx8aW1hZ2VzL2g2MC9oYWIvODgyMjE0NzE4NjcxOC5zdmd8YjNmMmU2YTg5MTM0NTMzM2Y2ODg2ZmRkZTJhNmY2OWZhYmYyYjk5NWQxODkxODFiYjVkY2MxY2NjOWRlMzA5OA"
         alt="RODAN+FIELD">
@@ -43,15 +43,15 @@ let headers = ()=>{
                 </ul>
                 <ul>
                     <h4>SHOP BY CONCERN</h4>
-                    <li><a href=""> Fine Lines & Deep Wrinkles</a></li>
-                    <li><a href="">Lifting & Firming</a></li>
-                    <li><a href="">Dull $ Tired Skin</a></li>
-                    <li><a href="">Acne & Breakouts</a></li>
-                    <li><a href="">Teen Acne</a></li>
-                    <li><a href="">Uneven Tone & Brown Spot</a></li>
-                    <li><a href="">Sensitivity/Visible Redness</a></li>
-                    <li><a href="">Pores & Blackheads</a></li>
-                    <li><a href="">Dry Skin</a></li>
+                    <li><a href="./shopbyconcern/FINE_LINES_& _WRINKLES.html"> Fine Lines & Deep Wrinkles</a></li>
+                    <li><a href="./shopbyconcern/LIFTING_&_FIRMING.html">Lifting & Firming</a></li>
+                    <li><a href="./shopbyconcern/DULL_&_TIRED SKIN.html">Dull $ Tired Skin</a></li>
+                    <li><a href="./shopbyconcern/ACNE_&_BREAKOUTS.html">Acne & Breakouts</a></li>
+                    <li><a href="./shopbyconcern/ACNE_&_BREAKOUTS.html">Teen Acne</a></li>
+                    <li><a href="./shopbyconcern/UNEVEN_SKIN_TONE_&_DARK_SPOTS.html">Uneven Tone & Brown Spot</a></li>
+                    <li><a href="./shopbyconcern/SENSITIVESKIN.html">Sensitivity/Visible Redness</a></li>
+                    <li><a href="./shopbyconcern/PORES.html">Pores & Blackheads</a></li>
+                    <li><a href="./shopbyconcern/DRY_SKIN.html">Dry Skin</a></li>
                 </ul>
                 <ul>
                     <h4>SHOP BY PRODUCT LINE</h4>
@@ -85,11 +85,11 @@ let headers = ()=>{
         <li class="categories-items">OUR STORY
             <div class="submenu">
                 <ul>
-                    <li><a href="">R+F Difference</a></li>
-                    <li><a href="">Personalized Service</a></li>
-                    <li><a href="">Explore Our Regimens</a></li>
-                    <li><a href="">Our Founders</a></li>
-                    <li><a href="">Our Impact</a></li>
+                    <li><a href="ourstory/R+F Difference.html">R+F Difference</a></li>
+                    <li><a href="ourstory/personalize.html">Personalized Service</a></li>
+                    <li><a href="ourstory/explore.html">Explore Our Regimens</a></li>
+                    <li><a href="ourstory/our_founder.html">Our Founders</a></li>
+                    <li><a href="ourstory/our_impact.html">Our Impact</a></li>
                 </ul>
             </div>
         </li>
@@ -97,7 +97,7 @@ let headers = ()=>{
         <li><a href="./pcpeeks.html">PERKS PROGRAM</a></li>
         <li><a href="become a consultant.html">BECOME A CONSULTANT</a></li>
      
-        <li>BLOG</li>
+        <li><a href="blog.html">BLOG</a></li>
     </ul>
 </div>
 
@@ -143,16 +143,16 @@ let headers = ()=>{
     <!-- Login box page start here  -->
 
     <div id="login-box">
-        <span>Email</span>
-        <input type="email">
+        <span>User Name</span>
+        <input type="email" id="username">
         <span id="password-box">
             <p>Password</p>
             <p><a href="">Forgot Password</a></p>
         </span>
-        <input type="password">
-        <p id="signup"><a href="../signup/signup.html">Create Account</a></p>
+        <input type="password" id="password">
+        <p id="signup"><a href="signup.html">Create Account</a></p>
         <p>This site is protected by reCAPTCHA and the <a href="">Google Privacy Policy</a> and <a href="">Terms ofService apply.</a></p>
-        <button id="signin">SIGN IN</button>
+        <button id="submit">SIGN IN</button>
     </div>
 
      <!-- Language box start here -->

@@ -1,4 +1,5 @@
 //navbar importing--------------------->
+
 import {blogPageNavbar} from "../components/blog_navbar.js";
 document.getElementById("blog_navbar").innerHTML = blogPageNavbar()
 
