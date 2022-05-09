@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup Page</title>
+    <link rel="stylesheet" href="./styles/navbar.css">
+    <link rel="stylesheet" href="./styles/footer.css">
+    <link rel="icon" href="https://media.glassdoor.com/sqll/327628/rodan-fields-squarelogo-1459275043410.png">
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script
+      src="https://kit.fontawesome.com/24c494a6b6.js"
+      crossorigin="anonymous">
+    </script>
+    <style>
+       #signupDiv{
+           width: 500px;
+           margin: auto;
+           padding: 55px;
+           box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+       } 
+       input{
+        width: 100%;
+        height: 50px;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        border-bottom: 1x solid grey;
+        margin-bottom: 25px;
+       }
+       button{
+        width: 100%;
+        height: 60px;
+        margin-top: 50px;
+        font-size: 21px;
+        background-color: black;
+        color: white;
+        cursor: pointer;
+       }
+       .popup{
+           text-align: center;
+           background-color: blueviolet;
+       }
+       .success{
+           position: absolute;
+           top:0;
+           left: 43%;
+           transform: translate(-50%,-50%) scale((0.1));
+           visibility: hidden;
+           transition: transform 0.4s,top 0.4s;
+       }
+       .success-popup{
+           visibility: visible;
+           top: 35%;
+           transform: translate(-50%,-50%) scale((1));
+           background-color: violet;
+           color: white;
+           padding: 15px;
+           border-radius: 10px;
+       }
+       .unsuccess{
+           position: absolute;
+           top:0;
+           left: 43%;
+           transform: translate(-50%,-50%) scale((0.1));
+           visibility: hidden;
+           transition: transform 0.4s,top 0.4s;
+       }
+       .unsuccess-popup{
+           visibility: visible;
+           top: 35%;
+           transform: translate(-50%,-50%) scale((1));
+           background-color: brown;
+           color: white;
+           padding: 15px;
+           border-radius: 10px;
+       }
+       .popup button{
+           height: 40px;
+           width: 40px;
+           font-size: 14px;
+           border-radius: 8px;
+       }
+       
+    </style>
+</head>
+<body>
+     <!-- header of page -->
+     <div id="navbar"></div>
+
+    <center><h1>Signup</h1></center>
+    <div class="popup">
+        <div class="success">
+            <h1>Thank You!</h1>
+            <h3>Signup success</h3>
+            <button id="suc_btn">Ok</button>
+        </div>
+        <div class="unsuccess">
+            <h1>Sighup failed</h1>
+            <button id="unsuc_btn">Ok</button>
+        </div> 
+    </div>
+    <div id="signupDiv">
+        <form>
+            <input type="text" id="name" placeholder="NAME">
+            <br>
+            <input type="email" id="email" placeholder="EMAIL">
+            <br>
+            <input type="password" id="password" placeholder="PASSWORD">
+            <br>
+            <input type="text" id="username" placeholder="USERNAME">
+            <br>
+            <input type="number" id="mobile" placeholder="MOBILE NO">
+            <br>
+            <button id="submit">Submit</button>
+        </form>
+    </div>
+
+    <div id="footer"></div>
+</body>
+</html>
+<script type="module">
+
+import { headers } from "./components/navbar.js";
+
+document.getElementById("navbar").innerHTML = headers();
+
+import { footer } from "./components/footer.js";
+
+document.getElementById("footer").innerHTML = footer();
+
+    let success = document.querySelector(".success")
+    let suc_btn = document.getElementById("suc_btn");
+    let unsuccess = document.querySelector(".unsuccess")
+    let unsuc_btn = document.getElementById("unsuc_btn");
+
+    let register = async () =>{
+    event.preventDefault();
+    let form_data = {
+        name : document.getElementById("name").value,
+        email : document.getElementById("email").value,
+        password : document.getElementById("password").value,
+        username : document.getElementById("username").value,
+        mobile : document.getElementById("mobile").value,
+        description : ""
+    }
+    console.log(form_data)
+    form_data = JSON.stringify(form_data)
+
+    let res = await fetch("https://masai-api-mocker.herokuapp.com/auth/register",{
+        method: "POST" ,
+        body: form_data,
+        node:"no-cors",
+        headers:{
+            "Content-Type":"application/json"
+        },
+    });
+
+    let data = await res.json();
+    console.log(data)
+    
+    if(data.error===false){
+        success.classList.add("success-popup");
+        suc_btn.addEventListener("click",()=>{
+        successFunc()
+    })
+    }else{
+        unsuccess.classList.add("unsuccess-popup");
+        unsuc_btn.addEventListener("click",()=>{
+        unsuccessFunc()
+        })
+    }
+    
+}
+document.getElementById("submit").addEventListener("click",register);
+function successFunc(){
+    success.classList.remove("success-popup")
+    window.location.href="index.html"
+}
+function unsuccessFunc(){
+    success.classList.remove("success-popup");
+    unsuccess.classList.remove("unsuccess-popup");
+    popup.classList.add("popup-visiblity")
+}
+</script>
+<script src="./scripts/header.js" type="module"></script>

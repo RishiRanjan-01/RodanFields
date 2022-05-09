@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        #slideImagebox{
+            height: 300px;
+            width: 103%;
+            /* border: 1px solid red; */
+            display: grid; 
+             grid-template-columns: repeat(16,1fr);
+             gap: 8px;
+            overflow-x: hidden;
+            overflow-y: hidden;
+        
+        }
+        #slideImagebox > div{
+            /* border: 1px solid red; */
+            height: 300px;
+            /* width: 103%; */
+            width: 300px;
+            display: flex;
+        }
+        #slideImagebox img{
+            height: 300px;
+            width: 100%;
+            /* background-color: white; */
+        }
+        #left-angle-icon{
+            height: 39.5%;
+            width: 50px;
+            /* border: 1px solid red; */
+            position: absolute;
+            background-color: white;
+            opacity: 0.5;
+        }
+        #right-angle-icon{
+            height: 39.5%;
+            width: 50px;
+            /* border: 1px solid red; */
+            /* float: right; */
+            position: absolute;
+            margin-left: 1390px;
+            background-color: white;
+            opacity: 0.5;       
+        }
+        
+        #bottomImg{
+            height: 300px;
+            width: 103%;
+            border: 1px solid red;
+            margin-top: 30px;
+        }
+        #hoverContent{
+            height: 100%;
+            width: 100%;
+            /* border: 1px solid blue; */
+            display: grid;
+            gap: 0px;
+            justify-content: center;
+            align-items: center;
+            margin: auto;
+            visibility: hidden;
+            background-color: #eaeaea;
+            opacity: 0.7;
+            
+        
+        }
+        #hoverContent button{
+            height: 40px;
+            width: 150px;
+            background-color: black;
+            color: aliceblue;
+            /* border: 1px solid blue; */
+            margin-top: -150px;
+            border: none;
+            border-radius: 5px;
+            font-size: 15px;
+            cursor: pointer;
+        }
+        .fa-instagram{
+            /* border: 1px solid blue; */
+            font-size: 30px;
+            text-align: center;
+        }
+        #slideImagebox div:hover #hoverContent{
+            visibility: visible;
+        }
+        
+    </style>
+</head>
+<body>
+    <div id="slideImagebox">
+        <ion-icon id="left-angle-icon" name="chevron-back-outline"></ion-icon>
+        <ion-icon id="right-angle-icon"  name="chevron-forward-outline"></ion-icon>
+    </div>
+    <div class="owl-carousel owl-theme">
+        <div class="item"><h4>1</h4></div>
+        <div class="item"><h4>2</h4></div>
+        <div class="item"><h4>3</h4></div>
+        <div class="item"><h4>4</h4></div>
+        <div class="item"><h4>5</h4></div>
+        <div class="item"><h4>6</h4></div>
+        <div class="item"><h4>7</h4></div>
+        <div class="item"><h4>8</h4></div>
+        <div class="item"><h4>9</h4></div>
+        <div class="item"><h4>10</h4></div>
+        <div class="item"><h4>11</h4></div>
+        <div class="item"><h4>12</h4></div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</body>
+</html>
+<script>
+    let ImgArr = [
+    {
+        url:"https://cdn-yotpo-images-production.yotpo.com/instagram/24/17897284883279424/low_resolution.jpg"
+    },
+    {
+        url:"https://cdn-yotpo-images-production.yotpo.com/instagram/85/18124584601232185/low_resolution.jpg"
+    },
+    {
+        url:"https://cdn-yotpo-images-production.yotpo.com/instagram/80/17889235427243880/low_resolution.jpg"
+    },
+    {
+        url:"https://cdn-yotpo-images-production.yotpo.com/instagram/94/17878795901249094/low_resolution.jpg"
+    },
+    {
+        url:"https://cdn-yotpo-images-production.yotpo.com/instagram/69/17869295408638069/low_resolution.jpg"
+    },
+    {
+        url:"https://cdn-yotpo-images-production.yotpo.com/instagram/35/18149372425211935/low_resolution.jpg"
+    },
+    {
+        url:"https://cdn-yotpo-images-production.yotpo.com/instagram/30/17928229432858630/low_resolution.jpg"
+    },
+    {
+        url:"https://cdn-yotpo-images-production.yotpo.com/instagram/58/18145885435212058/low_resolution.jpg"
+    },
+    {
+        url:"https://cdn-yotpo-images-production.yotpo.com/instagram/13/17938930987707113/low_resolution.jpg"
+    },
+    {
+        url:"https://cdn-yotpo-images-production.yotpo.com/instagram/26/17937476044732026/low_resolution.jpg"
+    },
+    {
+        url:"https://cdn-yotpo-images-production.yotpo.com/instagram/21/17918148008057821/low_resolution.jpg"
+    },
+    {
+        url:"https://cdn-yotpo-images-production.yotpo.com/instagram/63/18192350263192663/low_resolution.jpg"
+    },
+    {
+        url:"https://cdn-yotpo-images-production.yotpo.com/instagram/63/17936354605688863/low_resolution.jpg"
+    },
+    {
+        url:"https://cdn-yotpo-images-production.yotpo.com/instagram/21/18173775787084721/low_resolution.jpg"
+    },
+    {
+        url:"https://cdn-yotpo-images-production.yotpo.com/instagram/21/18173775787084721/low_resolution.jpg"
+    },
+    {
+        url:"https://cdn-yotpo-images-production.yotpo.com/instagram/51/17914183256051851/low_resolution.jpg"
+    },
+]
+
+ImgArr.forEach(({url})=>{
+    let box = document.getElementById("slideImagebox");
+
+    let div = document.createElement("div");
+    div.setAttribute("class","item");
+
+    div.style.backgroundImage = "url(" + url + ")";
+
+    let div1 = document.createElement("div");
+    div1.setAttribute("id","hoverContent")
+
+    let icon = document.createElement("i");
+    icon.setAttribute("class","fa-brands fa-instagram")
+
+    let btn = document.createElement("button");
+    btn.innerText = "Shop Now"
+
+    div1.append(icon,btn)
+    div.append(div1)
+
+    box.append(div);
+})
+
+
+$('.owl-carousel').owlCarousel({
+    loop:true,
+    margin:10,
+   // autoplay:true,
+    nav:false,
+    dots:false,
+    stagePadding:50,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:4
+        },
+        1000:{
+            items:4
+        }
+    }
+})
+
+
+
+
+
+</script>

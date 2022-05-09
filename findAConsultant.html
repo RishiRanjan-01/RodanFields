@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find A Consultant Page</title>
+    <link rel="stylesheet" href="./style/findAConsultant.css">
+    <link rel="stylesheet" href="./styles/navbar.css">
+    <link rel="stylesheet" href="./styles/footer.css">
+    <link rel="icon" href="https://media.glassdoor.com/sqll/327628/rodan-fields-squarelogo-1459275043410.png">
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script
+      src="https://kit.fontawesome.com/24c494a6b6.js"
+      crossorigin="anonymous">
+</script>
+</head>
+<body>
+      <!-- header of page -->
+    <div id="navbar"></div>
+
+    <center><h1>CONNECT WITH A CONSULTANT</h1></center>
+    <center><p>R+F Independent Consultants give you one-on-one guidance for a personalized experience. Connect with a Consultant today.</p></center>
+    <div id="main">
+        <div id="leftbox">
+            <span>I KNOW A CONSULTANT</span>
+            <p>Search for an R+F Consultant by entering their name or Consultant ID number.</p>
+            <input type="text" placeholder="Name or Consultant ID">
+            <button>SEARCH</button>
+        </div>
+        <div id="rightbox">
+            <span>MATCH ME WITH A CONSULTANT</span>
+            <p>Enter your location details to be matched with an R+F Consultant that serves your area.</p>
+            <input type="text" placeholder="Zip Code">
+            <button>NEXT</button>
+        </div>
+    </div>
+    <div id="footer"></div>
+</body>
+</html>
+<script type="module">
+    import { headers } from "./components/navbar.js";
+
+    document.getElementById("navbar").innerHTML = headers();
+
+    import { footer } from "./components/footer.js";
+
+    document.getElementById("footer").innerHTML = footer();
+</script>
+<script src="./scripts/header.js" type="module"></script>
