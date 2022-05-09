@@ -1,0 +1,233 @@
+body{
+    margin: 0;
+    padding: 0;
+    overflow-y: scroll;
+}
+.upper_slide_div{
+    width: 100%;
+    height: 700px;
+    display: flex;
+}
+.text_slide{
+    text-align: left;
+    width: 50%;
+    height: 100%;
+    background-color: #faf6f5;
+    padding: 200px 30px 20px 100px;
+    box-sizing: border-box;
+}
+.text_slide p{
+    font-size: 18px;
+    color: #909090;
+    margin-bottom: 50px;
+}
+.text_slide h1{
+    font-size: 50px;
+    font-weight: 80;
+    margin-bottom: 50px;
+}
+.text_slide a{
+    font-size: 18px;
+    color: black;
+}
+.img_slide{
+    width: 50%;
+    height: 95%;
+}
+.img_slide img{
+    width: 100%;
+    height: 100%;
+}
+.upper_slide_button{
+    text-align: center;
+    margin-bottom: 90px;
+}
+.upper_slide_button button{
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-color: white;
+    margin-left: 10px;
+}
+#Skincare_blog_slider{
+    margin-bottom: 200px;
+    height: 650px;
+    box-sizing: border-box;
+}
+.item{
+    margin: 45px;
+    text-align: center;
+    padding-bottom: 15px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+.item h3{
+    font-family: RFdisplayRegular;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    color: #222222;
+    margin:15px
+}
+.item p{
+    margin-top: 15px;
+    font-weight: 200;
+}
+.item img{
+    height: 75%;
+    width: 100%;
+    object-fit: cover;
+    box-sizing: border-box;
+}
+.big_image{
+    margin-top: -150px;
+}
+.big_image h1,p{
+    margin-right: 100px;
+}
+.mask_container{
+    margin-top: 40px;
+    margin-bottom: 30px;
+    height: 450px;
+    display: flex;
+    justify-content: space-around;
+}
+.mask_items{
+    width: 18%;
+    height: 100%;
+    text-align: center;
+    cursor: pointer;
+}
+.mask_items img{
+    width: 100%;
+    height: 60%;
+}
+.mask_items a{
+    color: #222222;
+    font-size: 20px;
+    text-decoration: underline; 
+}
+.mask_items p{
+    font-family: rf_proximaNovaLight;
+    font-weight: 200;
+    font-size: 22px;
+    line-height: 28px;
+    color: #5a5757;
+    margin: 15px;
+}
+.category_container{
+    margin-top: 60px;
+    margin-bottom: 30px;
+    height: 350px;
+    display: flex;
+    justify-content: space-around;
+}
+.category_items{
+    width: 13%;
+    height: 100%;
+    text-align: center;
+    cursor: pointer;
+}
+.category_items img{
+    width: 100%;
+    height: 60%;
+    margin-bottom: 25px;
+}
+.category_items a{
+    color: #222222;
+    font-size: 20px;
+    text-decoration: underline; 
+}
+.randomimage img{
+    height: 300px;
+}
+.footer_line{
+    margin-top: 50px;
+    width: 100%;
+    border: 1px solid grey;
+}
+/* doctor's note page */
+#container{
+    width: 80%;
+    margin: auto;
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 200px;
+}
+.leftside{
+    width: 50%;
+}
+.rightside{
+    width: 40%;
+    padding-right: 20px;
+    box-sizing: border-box;
+}
+.content{
+    width: 100%;
+    display: flex;
+    box-sizing: border-box;
+    margin-bottom: 55px;
+}
+.pic{
+    height: 170px;
+    width: 170px;
+}
+.pic img{
+    width: 100%;
+    height: 100%;
+}
+.about{
+    width: 75%;
+    padding-left: 15px;
+}
+.about h3{
+    margin-top: 4px;
+    font-size: 25px;
+    font-weight: 400;
+    margin-bottom: -15px;
+    text-decoration: underline;
+    text-decoration-color: rgb(63, 62, 62);
+}
+.about p{
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: 200;
+    color: #5a5757;
+    word-spacing: 5px;
+    margin-right: 0px;
+    text-align:justify;
+    cursor: pointer;
+    margin-bottom: -2px;
+}
+.about a{
+    font-size: 22px;
+    font-weight: 400;
+    text-decoration: none;
+    color: #93c2df;
+}
+.r_content{
+    display: flex;
+    border-bottom: 1px solid grey;
+}
+.r_pic{
+    padding: 15px 15px 15px 0px;
+}
+.r_pic img{
+    height: 100px;
+    width: 100px;
+}
+.r_about{
+    padding-top: 8px;
+    line-height: 30px;
+    padding-bottom: 8px;
+}
+.r_about p{
+ font-size: 18px;
+ cursor: pointer;
+ line-height: 20px;
+}
+.r_about h3{
+    /* font-size: 24px; */
+    font-weight: 300;
+}
