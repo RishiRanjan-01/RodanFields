@@ -112,6 +112,10 @@
         }
 
     </style>
+     <script
+     src="https://kit.fontawesome.com/24c494a6b6.js"
+     crossorigin="anonymous">
+</script> 
 </head>
 <body>
     <div id="navbar"></div>
@@ -169,11 +173,11 @@
 </body>
 </html>
 <script type="module">
-    import { headers } from "/components/navbar.js";
+    import { headers } from "./components/navbar.js";
 
 document.getElementById("navbar").innerHTML = headers();
 
-import { footer } from "/components/footer.js";
+import { footer } from "./components/footer.js";
 
 document.getElementById("footer").innerHTML = footer();
 

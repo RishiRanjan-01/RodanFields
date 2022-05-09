@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotless</title>
+    <style>
+        #container{
+            position: relative;
+            /* width: 50%; */
+        }
+        #container img{
+            width: 100%;
+            height: auto;
+
+        }
+        #container>#button{
+            position:absolute;
+            top:50%;
+            left: 70%;
+            transform: translate(-50%,-50%);
+        }
+        #container>#div{
+            position: absolute;
+            top: 30%;
+            left: 75%;
+            transform: translate(-50%,-50%);
+        }
+        #button{
+          border-radius: 15px;
+          background-color: rgba(0, 0, 0, 0.849);
+          color: whitesmoke;
+          width: 12%;
+          height: 45px;
+          font-size: 20px;
+        }
+        #div{
+            width: 30%;
+            height: 400px;
+           
+        }
+        #sec_div>img{
+            width: 45%;
+            height: 600px;
+            margin: auto;
+        
+        }
+         #button1{
+            border-radius: 90%;
+          background-color: rgba(0, 0, 0, 0.849);
+          color: whitesmoke;
+          width: 130px;
+          height: 130px;
+          font-size: 20px;
+        }
+        #container>#button1{
+            position:absolute;
+            top:40%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+        }
+        #container>#button2{
+            position:absolute;
+            top:40%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+        }
+        #container>#button2{
+            position:absolute;
+            top:40%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+        }
+        #button2{
+            border-radius: 90%;
+          background-color: transparent;
+          color: whitesmoke;
+          width: 250px;
+          height: 150px;
+          font-size: 20px;
+          border-style: dashed;
+          border: black;
+        }
+        .container{
+            width:100%;
+            height: 700px;
+            background: whitesmoke;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .swiper{
+            width: 80%;
+            height:650px;
+        }
+        .swiper-slide img{
+            width: 60%;
+           height: 600px;
+           /* margin-left: 60px; */
+         margin-left: 200px;
+        }
+        #div img{
+            width: 95%;
+            height: 80%;
+        }
+        #div{margin: auto;}
+        
+    </style>
+    <link
+    rel="stylesheet"
+    href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+  />
+  
+  <link rel="stylesheet" href="./styles/navbar.css">
+       <link rel="stylesheet" href="./styles/footer.css">
+    
+       <script
+         src="https://kit.fontawesome.com/24c494a6b6.js"
+         crossorigin="anonymous">
+   </script> 
+
+</head>
+<body>
+    <div id="navbar"></div>
+   <div style="background-color: #faefe6;">
+    <div id="container">
+        <img src="https://www.rodanandfields.com/en-us/_ui/images/spotless-hero-des.jpg" alt="">
+        <button onclick="myfunction()" id="button">Shop Now</button>
+        
+        <div id="div">
+            <p style="font-size: 80px;font-weight: 800;margin-top: -20px;color:#c29dd0;text-shadow: 5px 5px 5px rgb(8, 8, 8);font-family:'Arial' Sans-Serif";>Face Up</p>
+            <p  style="font-size: 80px;font-weight: 600;margin-top: -80px;color:#c29dd0;text-shadow: 5px 5px 5px rgb(8, 8, 8);font-family:'Arial', sans-serif;">To Acne</p>
+            <p style="font-size: 20px; color: #604242;line-height: 32px; font-weight: 300;margin-top: -50px;font-family:'Arial', sans-serif;">Say ‘see ya never’ to breakouts with our SPOTLESS Regimen. Just 2 steps, 2 minutes, 2x a day.</p>
+        </div>
+        <p style="font-size: 80px;font-weight: 600;margin-top: 8%;margin-left: 15%; color:#c29dd0;text-shadow: 5px 5px 5px rgb(8, 8, 8);">SEE SPOTLESS IN ACTION</p>
+    </div>
+     <div style="display: flex;width: 80%;margin: auto;" id="sec_div" >
+         <img src="https://www.rodanandfields.com/en-us/_ui/images/before-after/Ashley_before_1X.jpg" alt="">
+         <img src="https://www.rodanandfields.com/en-us/_ui/images/before-after/Ashley_afterX.jpg" alt="">
+     </div>
+
+     <div style="width: 60%;margin: auto;margin-top: 30px;box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;">
+         <span><b>Please Note</b><p style="color: rgb(83, 81, 81);"> Results may vary depending on multiple factors: age, gender, skin condition, concomitant products used, health, history, location, lifestyle and diet. Participant images shown may include friends and/or family of R+F Independent Consultants.</p></span>
+     </div>
+   
+     <p style="font-size: 80px;font-weight: 600;margin-top: 5%;margin-left: 15%; color:#c29dd0;text-shadow: 5px 5px 5px rgb(8, 8, 8);">SEE SPOTLESS IN ACTION</p>
+     <p style="font-size: 30px;font-weight: 400;margin-top: 5%;margin-left: 15%; color: rgb(51, 50, 50);">Discover our game-changing acne Regimen with breakthrough BPO2 Technology.</p>
+    
+       <div id="container" style="width: 80%;margin: auto;">
+     
+         <video height="600px" width="100%" loop autoplay muted poster="https://www.rodanandfields.com/en-us/_ui/images/daily-acne-wash.jpg" preload="metadata" >
+            <source src="./video/video-launch.mp4" type="Video/MP4">
+        </video>
+        <button id="button1">watch science pf spotless</button>
+       </div>
+   </div>
+
+   <div style="background-color: #c29dd0;">
+
+    <p style="font-size: 80px;font-weight: 600;margin-top: 5%;text-align: center; color:#daedbc;text-shadow: 5px 5px 5px rgb(8, 8, 8);">MEET THE</p>
+    <p style="font-size: 80px;font-weight: 600;margin-top: -7%;text-align: center; color:#daedbc;text-shadow: 5px 5px 5px rgb(8, 8, 8);">SPOTLESS DUO</p>
+    <p style="font-size: 30px;font-weight: 400;margin-top: -5%; color: rgb(51, 50, 50);text-align: center;">Give acne the 1-2 punch in just two steps for Day 1 results.</p>
+  
+<div style="width: 80%;margin: auto;margin-top: 50px;display: flex;">
+
+    <div style="width: 47%;height: 100%;margin: auto;background-color: whitesmoke;">
+
+    <p style="color: #c29dd0;font-weight: 800;font-size: 48px;font-family: 'Arial' Sans-Serif;text-shadow: 5px 5px 5px rgb(0.1, 0.1, 0);text-align: center;">STEP 1 : CLEANSE</p>
+    <img style="width: 100%;margin-top: -20px;height: 550px;" src="https://www.rodanandfields.com/en-us/_ui/images/daily-acne-wash.jpg" alt="">    
+    <p style="color: #c29dd0;font-weight: 800;font-size: 38px;font-family: 'Arial' Sans-Serif;text-shadow: 5px 5px 5px rgb(0, 0, 0);text-align: center;">STEP 1 : CLEANSE</p>
+    <p style="text-align: center;padding: 0 20px 10px 20px;font-size: larger;font-family: 'Arial',sans-serif;color: rgba(53, 51, 51, 0.89);">Gentle exfoliator washes away dirt, reduces shine + unclogs pores for a fresh-feeling finish.</p>
+
+    </div>
+    
+    
+    <div style="width: 47%;height: 100%;margin: auto;background-color: whitesmoke;">
+
+        <p style="color: #c29dd0;font-weight: 800;font-size: 48px;font-family: 'Arial' Sans-Serif;text-shadow: 5px 5px 5px rgb(0.1, 0.1, 0);text-align: center;">STEP 1 : CLEANSE</p>
+        <img style="width: 100%;margin-top: -20px;height: 550px;" src="https://www.rodanandfields.com/en-us/_ui/images/acne-clearing-treatment.jpg" alt="">    
+        <p style="color: #c29dd0;font-weight: 800;font-size: 38px;font-family: 'Arial' Sans-Serif;text-shadow: 5px 5px 5px rgb(0, 0, 0);text-align: center;">STEP 1 : CLEANSE</p>
+        <p style="text-align: center;padding: 0 20px 10px 20px;font-size: larger;font-family: 'Arial',sans-serif;color: rgba(53, 51, 51, 0.89);">Gentle exfoliator washes away dirt, reduces shine + unclogs pores for a fresh-feeling finish.</p>
+    
+        </div>
+    
+  
+    
+    </div>
+
+    <div id="container" style="width: 80%;height: 700px;margin: auto;margin-top: 100px;">
+        <video  height="600px" width="100%" loop autoplay muted poster="https://www.rodanandfields.com/en-us/_ui/images/daily-acne-wash.jpg" preload="metadata" >
+            <source src="./video/video-how-to.mp4" type="Video/MP4">
+        </video>
+        <button id="button1">watch science pf spotless</button>
+     
+    </div>
+   
+</div>
+
+<div class="container" style="box-sizing: border-box;">
+    <div class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide"><img src="https://www.rodanandfields.com/en-us/_ui/images/US-Awards_Allure_3x.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="https://www.rodanandfields.com/en-us/_ui/images/acne-clearing-treatment.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="https://www.rodanandfields.com/en-us/_ui/images/rodan-and-fields-doctors-us.jpg" alt=""></div>
+         
+          <!-- ... -->
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+      
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      
+        <!-- If we need scrollbar -->
+        <!-- <div class="swiper-scrollbar"></div> -->
+      </div>
+    
+</div>
+
+<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+
+<script >
+    const swiper = new Swiper('.swiper', {
+
+        autoplay:{
+            delay:3000,
+            disableOnInteraction:false,
+        },
+
+  loop: true,
+
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination',
+    clickable:true,
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+
+  // And if we need scrollbar
+
+});
+</script>
+
+
+    <p style="color: #c29dd0;font-weight: 800;font-size: 48px;font-family: 'Arial' Sans-Serif;text-shadow: 5px 5px 5px rgb(0.1, 0.1, 0);text-align: center;">#RFSPOTLESS
+       <br> YOUR SPOTLESS RESULTS</p>
+     <div  style="width: 90%;height: 500px;margin: auto;display: flex;">
+       <div id="div"><img src="https://edge.curalate.com/v1/img/B6qGYOcbikaoTe7nL1wzgQnNxMI7zgxe9rWv1z3kJOs=/w/300?typ=webp" alt=""></div>
+       <div id="div"><img src="https://www.rodanandfields.com/en-us/_ui/images/BPO2-Technology.jpg" alt=""></div>
+       <div id="div"><img src="https://www.rodanandfields.com/en-us/_ui/images/blog-easy-ways.jpg" alt=""></div>
+       <div id="div"><img src="https://www.rodanandfields.com/en-us/_ui/images/blog-acne-myth-buster.jpg" alt=""></div>
+       <div id="div"><img src="https://www.rodanandfields.com/en-us/_ui/images/blog-what-is-acne.jpg" alt=""></div>
+    
+
+     </div>  
+
+   
+     <div id="footer"></div>
+    </body>
+</html>
+<script type="module">
+    
+import { headers } from "./components/navbar.js";
+
+document.getElementById("navbar").innerHTML = headers();
+
+import { footer } from "./components/footer.js";
+
+document.getElementById("footer").innerHTML = footer();
+
+      function myfunction(){
+        console.log("yegs")
+     }
+</script>
+<script src="./scripts/header.js" type="module"></script>

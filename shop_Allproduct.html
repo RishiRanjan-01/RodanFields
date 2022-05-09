@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PRO SKINCARE TOOLS</title>
+    <style>
+        #topic{
+            margin-top: 5%;
+            text-align: center;
+            
+        }
+       #detail{
+           text-align: center;
+           line-height: 150%;
+           font-size: 120%;
+           color:rgb(116, 113, 113);    
+       }
+       
+        #div1{
+            width: 60%;
+            margin: auto;
+        }
+    #container{
+            display: grid;
+            
+            grid-template-columns: repeat(3,28%);
+            grid-template-rows: repeat(auto,);
+            
+            text-align: center;
+          
+            text-align: center;
+            justify-content: center;
+            column-gap: 3%;
+            row-gap: 35px;
+           
+        }
+        
+        
+        #container>div>img{
+            height: 350px;
+            width: 100%;
+            
+        }
+        #container>div>span{
+            color:aqua;
+            font-size: 12px;
+            font-weight: bold;
+            
+            
+
+        }
+        #container>div>button{
+            display: block;
+            margin: auto;
+            height: 10%;
+            width: 85%;
+            background-color: white;
+            /* padding-left: 120px;
+            padding-bottom: 25px; */
+            text-align: center;
+            justify-content: center;
+            font-size: large;
+            border: 1px solid black;
+            margin-top: 10px;
+            
+            
+            
+        }
+        #page{
+           
+           margin-top: 5%;
+           height: 60%;
+           width: 25%;
+           
+           text-align: center;
+           margin-left:70%
+       }
+    </style>
+</head>
+<body>
+    <h1 id="topic" >SPOTLESS</h1>
+    <div id="div1"><p id="detail">Our spotless-inspired skincare tools use advanced
+         technologies to optimize your results,
+         provide additional benefits and target specific skin concerns.</p></div>
+
+<div id="container" ></div>
+<img id="page" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKspenKcTgH7Z60S_E2Ttoe1h1YZg4L9VUBxuYVK5oN0S_4dVe" />
+</body>
+</html>
+
+<script>
+
+const data=[
+    {
+        img:`https://www.rodanandfields.com/en-us/medias/HAAMS22P-720x600-desktop-1.jpg?context=bWFzdGVyfHJvb3R8MzU2MTV8aW1hZ2UvanBlZ3xoNWQvaDkwLzE1MDM4NTk0Njc4ODE0LmpwZ3w0M2RjYTNjYTRmZTdkYjNhNDUyN2FhNjY1MzdkMzYxNmFjNjEwMmIwMGYyMTZjODFiNzY0MTkxZTQ5OWU2ODQ3`,
+        h3:'Total RF Serum & REDEFINE Regimen + Mini Special',
+        price:408,
+        span:"PC PERKS"
+    
+    },
+    {
+        img:`https://www.rodanandfields.com/en-us/medias/HRVMS22P-720x600-desktop-1.jpg?context=bWFzdGVyfHJvb3R8MzI2MjR8aW1hZ2UvanBlZ3xoYjkvaDZlLzE1MDM4NTk1MTM3NTY2LmpwZ3w1ZjQ4M2I5ZGVjMGZkNDc5NzRlMDhlOTdjNjEyOTJlNDQxODM5NTQxNjVlOTk2MDE0MDY1MGE2N2NjZTQ2YzAw`,
+        price:384,
+        h3:'Total RF Serum & REVERSE Regimen + Mini Special',
+        span:"PC PERKS"
+    
+    },
+    {
+        img:`https://www.rodanandfields.com/en-us/medias/HUNMS22P-720x600-desktop-1.jpg?context=bWFzdGVyfHJvb3R8MzI2Mjh8aW1hZ2UvanBlZ3xoOTQvaDgzLzE1MDM4NTk2MjUxNjc4LmpwZ3wwMWJjYWZmMGNkZTUzMTI4ZjA2NjIwZDliNGZjNDRkNjFiMmY2YmRmMTc5MjFmYTgxNjUwN2YzN2E2YjRmMjkw`,
+        price:378,
+        h3:'Total RF Serum & UNBLEMISH Regimen + Mini Special',
+        span:"PC PERKS"
+    
+    },
+    {
+        img:`https://www.rodanandfields.com/en-us/medias/HSOMS22P-720x600-desktop-1.jpg?context=bWFzdGVyfHJvb3R8MzA4MDV8aW1hZ2UvanBlZ3xoMDUvaGI3LzE1MDM4NTk1Mzk5NzEwLmpwZ3xkZTE0ZWYyYzVhMWFjNWVhZTg2NTg5ZjVlMzRlYjM5YTc4NGRmNmYyZWEyMjJkZDVhY2NmM2RjMjQyZTVhZjIy`,
+        price:373,
+        h3:'Total RF Serum & SOOTHE Regimen + Mini Special',
+        span:"PC PERKS"
+    
+    },
+    {
+        img:`https://www.rodanandfields.com/en-us/medias/TRFS-Regimen-Explainer-GLOBAL-570x570.png?context=bWFzdGVyfGltYWdlc3wyODM2M3xpbWFnZS9wbmd8aW1hZ2VzL2g5Yy9oNzcvMTM3NTgzODUzODk1OTgucG5nfGYyZGUwNzdmOWM3N2Q2M2FlMjM4Zjc4MjQxNWZkNmIzOTc0NjIyZWM3MDgyZTY3YzA5YjMyZjNhZWY3MGE3YzY`,
+        price:175,
+        h3:'Total RF Serum',
+        span:"PC PERKS"
+    
+    },
+    {
+        img:`https://www.rodanandfields.com/en-us/medias/ENFMR30-Global-720x600-Desktop.jpg?context=bWFzdGVyfGltYWdlc3wzNjExN3xpbWFnZS9qcGVnfGltYWdlcy9oZjkvaDJiLzEzNjkzOTY2NDUwNzE4LmpwZ3wxODM3NzM2MTE0ZmMxM2VmMTVlYTA3ZTM5MWU3NzdmMTIzNmFkYzgzM2Y1YmIwMzk4OWFlNjQ1MzlkOGI5N2I2`,
+        price:148,
+        h3:'Total RF Serum Refill',
+        span:"PC PERKS"
+    },
+    {
+        img:`https://www.rodanandfields.com/en-us/medias/ENHEFG1-570x570-Desktop.png?context=bWFzdGVyfGltYWdlc3wyMjI3N3xpbWFnZS9wbmd8aW1hZ2VzL2hkMS9oM2MvMTQ1MzIxNjY2MTUwNzAucG5nfGZlMDQ0NDRlMjczNDFlZjdkYWVmNjkwZWY4MDAwM2I4MjMwZGZiMzU3ZTViZGNlYjllNzBiZjAwY2FlZDU5NzA`,
+        price:112,
+        h3:'Active Hydration Serum',
+        span:"PC PERKS"
+    
+    },
+    {
+        img:`https://www.rodanandfields.com/en-us/medias/AAAPS01-Regimen-Explainer-AMP-MD-System-570x570-Desktop.png?context=bWFzdGVyfGltYWdlc3wxODcyNnxpbWFnZS9wbmd8aW1hZ2VzL2gzNS9oNDEvMTQ2MDQwOTQ0MDY2ODYucG5nfGYyNGNkZTQ1ODc2Zjg3OGYzMjZjNDFmMTI4NTdmNzNkOWM0MmIzZTZhMzRkMDE0OTMwNjRkOTZiMDdiZTYyMjk`,
+        price:227,
+        h3:'REDEFINE AMP MD System',
+        span:"PC PERKS"
+    
+    },
+    {
+        img:`https://www.rodanandfields.com/en-us/medias/IRS-Regimen-Explainer-GLOBAL-570x570.png?context=bWFzdGVyfGltYWdlc3w0NzYwNXxpbWFnZS9wbmd8aW1hZ2VzL2gzMy9oMmIvMTM3NTgzODU3MTcyNzgucG5nfDU3MDNlODNlMjk0MDZiYWEwODU1NTZhMDg3NDBkNTU4M2EwNGJiY2M1OTZmN2RlMWNlM2UwYmEyZDg5YzViNDM`,
+        price:102,
+        h3:'REDEFINE Intensive Renewing Serum',
+        span:"PC PERKS"
+    
+    },
+    {
+        img:`https://www.rodanandfields.com/en-us/medias/AAAPR01-cat.jpg?context=bWFzdGVyfGltYWdlc3w2MTA3NHxpbWFnZS9qcGVnfGltYWdlcy9oYTYvaDc3Lzg4MjE4NDE3MjM0MjIuanBnfGM3MTc2MmQzNTg4MWJkZTRhNjkyZjBhYmE2MDkxMjAzYzZiMWQwNGI2NGEzZDUyOTdjMDk3M2ZlNWU5M2JmNTc`,
+        price:120,
+        h3:'REDEFINE AMP MD System Refill',
+        span:"PC PERKS"
+    
+    },
+    {
+        img:`https://www.rodanandfields.com/en-us/medias/HAAGRTRF-AAWA125-AATN125-AATL030-AAPL030-ENFM030-720x600-desktop-1.jpg?context=bWFzdGVyfGltYWdlc3w4NDEwM3xpbWFnZS9qcGVnfGltYWdlcy9oZGMvaGRkLzEzOTc3NjUzNTQyOTQyLmpwZ3xhN2M4ZTcyYjQxNzhjMjcyNDZiNzk5OTEzOWZhZDA2NzIyNzkyODhiYzY0NjY2ZTk1ZGY4OWQ0NTJjNjc3Njk0`,
+        price:358,
+        h3:'REDEFINE + Total RF Serum Special',
+        span:"PC PERKS"
+    
+    },
+    {
+        img:`https://www.rodanandfields.com/en-us/medias/HRVRGTRF-720x600-desktop-1.jpg?context=bWFzdGVyfGltYWdlc3w5NDMwOHxpbWFnZS9qcGVnfGltYWdlcy9oYzIvaGMzLzEzOTc3NjU2NTI0ODMwLmpwZ3wzZDI3Mzk1ZTZhMjVjMTMwMWZhMTYzNTNmZjVlYTAxM2YwMzYwYTg5OWU1NTNlYjY3MTYwNDQzNGY3ZTA4ZGY3`,
+        price:334,
+        h3:'REVERSE + Total RF Serum Special',
+        span:"PC PERKS"
+    
+    }
+    
+]
+data.forEach(function (ele){
+    let div=document.createElement("div")
+
+    let img=document.createElement("img")
+    img.src=ele.img;
+
+    let h3=document.createElement("h3")
+    h3.innerText=ele.h3;
+
+    let price=document.createElement("p")
+    price.innerText=`$${ele.price}.00 with `;
+    let span=document.createElement("span")
+    span.innerText=ele.span
+
+    let button=document.createElement("button")
+    button.setAttribute("class","Button")
+    button.innerText="Add To Card"
+    
+    div.append(img,h3,price.innerText,span,button)
+    container.append(div)
+
+    button.addEventListener("click",function (){
+        addTocart(ele)
+    })
+})
+function addTocart(ele){
+    let addbag=JSON.parse(localStorage.getItem("product")) || []
+    addbag.push(ele)
+    localStorage.setItem("product",JSON.stringify(addbag))
+    console.log(addbag)
+}
+
+localStorage.setItem("bestseller",JSON.stringify(data))
+</script>
+

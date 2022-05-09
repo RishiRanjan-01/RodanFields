@@ -30,16 +30,16 @@ let headers = ()=>{
             <div class="submenu">
                 <ul>
                     <h4>SHOP BY CATEGORY</h4>
-                    <li><a href=""> Regimen</a></li>
-                    <li><a href="">Face Serums</a></li>
-                    <li><a href="">Eye, Lips & Lashes</a></li>
-                    <li><a href="">Face Mask</a></li>
-                    <li><a href="">Dermacosmetics</a></li>
-                    <li><a href="">Hand & Body</a></li>
-                    <li><a href="">Sun Protection</a></li>
-                    <li><a href="">Pro Skincare Tools</a></li>
-                    <li><a href="">Accessories</a></li>
-                    <li><a href="">Special Offers</a></li>
+                    <li><a href="./shop_Regimens1.html"> Regimen</a></li>
+                    <li><a href="./shop_facesrum2.html">Face Serums</a></li>
+                    <li><a href="./shop_eyelips3.html">Eye, Lips & Lashes</a></li>
+                    <li><a href="./shop_facemask4.html">Face Mask</a></li>
+                    <li><a href="./shop_dermacos5.html">Dermacosmetics</a></li>
+                    <li><a href="./shop_hand&body6.html">Hand & Body</a></li>
+                    <li><a href="./shop_sunprotection7.html">Sun Protection</a></li>
+                    <li><a href="./shop_proskincare8.html">Pro Skincare Tools</a></li>
+                    <li><a href="./shop_accessories9.html">Accessories</a></li>
+                    <li><a href="./shop_specialoffer10.html">Special Offers</a></li>
                 </ul>
                 <ul>
                     <h4>SHOP BY CONCERN</h4>
@@ -55,28 +55,30 @@ let headers = ()=>{
                 </ul>
                 <ul>
                     <h4>SHOP BY PRODUCT LINE</h4>
-                    <li><a href="">Redfine</a></li>
-                    <li><a href="">Reverse</a></li>
-                    <li><a href="">Recharge</a></li>
-                    <li><a href="">Unblemish</a></li>
-                    <li><a href="">Spotless</a></li>
-                    <li><a href="">Soothe</a></li>
-                    <li><a href="">Enhancements</a></li>
-                    <li><a href="">Essentials</a></li>
-                    <li><a href="">Dermocosmetics</a></li>
-                    <li><a href="">Pro Skincare Tools</a></li>
-                    <li><a href="">All Products</a></li>
+                    <li><a href="./shop_ReDefine.html">Redfine</a></li>
+                    <li><a href="./shop_Reverse.html">Reverse</a></li>
+                    <li><a href="./shop_Recharge.html">Recharge</a></li>
+                    <li><a href="./shop_Essential.html">Unblemish</a></li>
+                    <li><a href="./shop_Spotless.html">Spotless</a></li>
+                    <li><a href="./shop_Soothe.html">Soothe</a></li>
+                    <li><a href="./shop_Enhancement.html">Enhancements</a></li>
+                    <li><a href="./shop_Essential.html">Essentials</a></li>
+                    <li><a href="./shop_Dermocosmetics.html">Dermocosmetics</a></li>
+                    <li><a href="./shop_Proskincare Tools.html">Pro Skincare Tools</a></li>
+                    <li><a href="./shop_All Products.html">All Products</a></li>
                 </ul>
             </div>
         </li>
-        <li>BEST SELLER</li>
+      
+        <li><a href="./bestceller.html">BEST SELLER</a></li>
+
         <li class="categories-items">FEATURED
             <div class="submenu">
                 <ul>
-                    <li><a href="practice.html">Special Offers</a></li>
-                    <li><a href="">New Total RF Serum</a></li>
-                    <li><a href="">Spotless for Teens</a></li>
-                    <li><a href="">Self Care Essentials</a></li>
+                    <li><a href="./featured.html">Special Offers</a></li>
+                    <li><a href="./self care essential.html">New Total RF Serum</a></li>
+                    <li><a href="./self care essential.html">Spotless for Teens</a></li>
+                    <li><a href="./spotless for teens.html">Self Care Essentials</a></li>
                 </ul>
             </div>
         </li>
@@ -91,8 +93,10 @@ let headers = ()=>{
                 </ul>
             </div>
         </li>
-        <li>PERKS PROGRAM</li>
-        <li>BECOME A CONSULTANT</li>
+       
+        <li><a href="./pcpeeks.html">PERKS PROGRAM</a></li>
+        <li><a href="become a consultant.html">BECOME A CONSULTANT</a></li>
+     
         <li>BLOG</li>
     </ul>
 </div>
