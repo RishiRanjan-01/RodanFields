@@ -17,6 +17,7 @@ The project has been completed within the duration of 5 days. Each of us had sha
 3. Md-Gulzeesh
 4. Abhay Kumar
 5. Anurag Singh Rajawat
+6. Shivam Kumar
 
 ## Tech Stack and features
 - Javascript
